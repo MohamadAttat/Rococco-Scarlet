@@ -1,0 +1,99 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-product(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(-5px);" data--50-top="transform: translateY(-15px);opacity:0.8;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					| Product Cart
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| We hope you will like this product and give us 5 star rating
+block append config
+	- var page_title = 'Product Cart'
+	- var Current_page = 'product-cart'
+	- var Current_parent = 'menu'
+block main
+	.container
+		section.padding-top-100.padding-bottom-100
+			form.product-cart-form
+				table.shop_table.shop_table_responsive
+					thead
+						tr
+							th.product-remove  
+							th.product-thumbnail  
+							th.product-name Product
+							th.product-price Price
+							th.product-quantity Quantity
+							th.product-subtotal Total
+					tbody
+						tr.cart_item
+							td.product-remove
+								a.link-underline.link-underline-opacity-0.remove(href='#', aria-label='Remove this item', data-product_id='1061', data-product_sku='') ×
+							td.product-thumbnail
+								a(href='#')
+									img.img-fluid(width='150', height='100', src='assets/images/product/product-2l.jpg', alt='')
+							td.product-name(data-title='Product')
+								a.link-underline.link-underline-opacity-0(href='#') Chocolate Fudge Ripple
+							td.product-price(data-title='Price')
+								span.product-Price-amount.amount
+									span.product-Price-currencySymbol $
+									| 25.0
+							td.product-quantity(data-title='Quantity')
+								.quantity
+									input.form-control.input-qty(type='number', step='1', min='0', max='', name='cart[a89cf525e1d9f04d16ce31165e139a4b][qty]', value='1', title='Qty', size='4', pattern='[0-9]*', inputmode='numeric')
+							td.product-subtotal(data-title='Total')
+								span.product-Price-amount.amount
+									span.product-Price-currencySymbol $
+									| 25.0
+						tr.cart_item
+							td.product-remove
+								a.link-underline.link-underline-opacity-0.remove(href='#', aria-label='Remove this item', data-product_id='1070', data-product_sku='') ×
+							td.product-thumbnail
+								a(href='#')
+									img.img-fluid(width='150', height='100', src='./assets/images/product/product-2n.jpg', alt='')
+							td.product-name(data-title='Product')
+								a.link-underline.link-underline-opacity-0(href='#') Coffee Caramel Swirl
+							td.product-price(data-title='Price')
+								span.product-Price-amount.amount
+									span.product-Price-currencySymbol $
+									| 14.0
+							td.product-quantity(data-title='Quantity')
+								.quantity
+									input.form-control.input-qty(type='number', step='1', min='0', max='', name='', value='1', title='Qty', size='4', pattern='[0-9]*', inputmode='numeric')
+							td.product-subtotal(data-title='Total')
+								span.product-Price-amount.amount
+									span.product-Price-currencySymbol $
+									| 14.0
+						tr
+							td.product-coupon(colspan='6')
+								.actions
+									.coupon
+										input.form-control.input-coupon(type='text', name='coupon_code', value='', placeholder='Coupon code')
+										input.swin-btn(type='button', name='apply_coupon', value='Apply coupon')
+									input.swin-btn.f-right(type='button', name='update_cart', value='Update cart')
+			.product-cart-total
+				.row
+					.col-md-5.ms-auto
+						h2.cart-total-title Cart Totals
+						table.shop_table(cellspacing='0')
+							tbody
+								tr.cart-subtotal
+									th Subtotal
+									td(data-title='Subtotal')
+										span.product-amount.amount
+											span.product-currencySymbol $
+											| 39.0
+								tr.order-total
+									th Total
+									td(data-title='Total')
+										strong
+											span.product-amount.amount
+												span.product-currencySymbol $
+												| 39.0
+						a.link-underline.link-underline-opacity-0.swin-btn(href='#')
+							span Process To Checkout

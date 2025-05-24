@@ -1,0 +1,500 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-menu(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(-5px);" data--50-top="transform: translateY(-15px);opacity:0.8;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					|Menu Grid 03
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| The various dishes are waiting for your coming to enjoy its
+block append config
+	- var page_title = 'Menu Grid 03'
+	- var Current_page = 'menu-grid-03'
+	- var Current_parent = 'menu'
+block main
+	section.product-sesction-03.padding-top-100.padding-bottom-100
+		div.container
+			div.row
+				div.col-md-12
+					.swin-sc.swin-sc-product.products-01.style-01.woocommerce
+						.row
+							.col-md-4
+								.cat-wrapper.main-slider
+									.item
+										img.img.img-fluid(src='assets/images/product/pd-cat-dessert.png', alt='')
+									.item
+										img.img.img-fluid(src='assets/images/product/pd-cat-lunch.png', alt='')
+									.item
+										img.img.img-fluid(src='assets/images/product/pd-cat-dinner.png', alt='')
+									.item
+										img.img.img-fluid(src='assets/images/product/pd-cat-dessert.png', alt='')
+							.col-md-8
+								.products.nav-slider
+									.item-slick
+										.row
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Frish Cheese Chip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01b.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Grandpa's Country Fried For Breakfast
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 30.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01c.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 27.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01d.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 17.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01e.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Spicy Meal 01
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 22.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01f.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Spicy special 01
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 23.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01l.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 21.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+									.item-slick
+										.row
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01e.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Spicy Meal 01
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 22.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01f.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Spicy special 01
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 23.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01l.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 21.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Frish Cheese Chip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01b.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Grandpa's Country Fried For Breakfast
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 30.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01c.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 27.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01d.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 17.0
+					.swin-btn-wrap.center.mtxxl
+						a.link-underline.link-underline-opacity-0.swin-btn.center.btn-transparent(href='#') 
+							span All Dishes
+	section.menu-banner-section.banner-section.padding-top-100.padding-bottom-100
+		img.img-left.img-bg.img-deco.img-fluid(src='assets/images/background/lemon.png', alt='')
+		img.img-right.img-bg.img-deco.img-fluid(src='assets/images/background/vegetable_03.png', alt='')
+		.container
+			.row
+				.col-md-8.offset-md-2
+					.content-wrapper
+						h2.heading-title
+							| Let's Make Your Meal be Fantastic With
+							span.text-large  FOODAY
+							| Awesome Menu!
+						.swin-btn-wrap
+							a.link-underline.link-underline-opacity-0.swin-btn(href='#')
+								span Book Table
+	section.product-sesction-03.padding-top-100.padding-bottom-100
+		div.container
+			div.row
+				div.col-md-12
+					.swin-sc.swin-sc-product.products-01.style-01.woocommerce
+						.row
+							.col-md-4
+								.cat-wrapper.main-slider
+									.item
+										img.img.img-fluid(src='assets/images/product/pd-cat-dessert.png', alt='')
+									.item
+										img.img.img-fluid(src='assets/images/product/pd-cat-lunch.png', alt='')
+									.item
+										img.img.img-fluid(src='assets/images/product/pd-cat-dinner.png', alt='')
+									.item
+										img.img.img-fluid(src='assets/images/product/pd-cat-dessert.png', alt='')
+							.col-md-8
+								.products.nav-slider
+									.item-slick
+										.row
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Frish Cheese Chip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01b.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Grandpa's Country Fried For Breakfast
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 30.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01c.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 27.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01d.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 17.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01e.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Spicy Meal 01
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 22.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01f.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Spicy special 01
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 23.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01l.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 21.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+									.item-slick
+										.row
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01e.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Spicy Meal 01
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 22.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01f.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Spicy special 01
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 23.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01l.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 21.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Frish Cheese Chip
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01b.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Grandpa's Country Fried For Breakfast
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 30.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01c.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 27.0
+											.col-md-3.col-sm-6.col-xs-12
+												.item.product-01
+													.block-img
+														img(src='assets/images/product/product-01d.jpg', alt='')
+														.group-btn
+															a.swin-btn.btn-link(href='javascript:void(0)')
+																i.icons.fa.fa-link
+															a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																i.fa.fa-shopping-basket
+													a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 17.0
+					.swin-btn-wrap.center.mtxxl
+						a.link-underline.link-underline-opacity-0.swin-btn.center.btn-transparent(href='#') 
+							span All Dishes

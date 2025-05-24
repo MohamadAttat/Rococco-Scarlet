@@ -1,0 +1,19 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-about(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					| Blank
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| We bring to you the unforgetable moment with our delicious dishes
+block append config
+	- var page_title = 'Blank'
+	- var Current_page = 'Blank'
+block main

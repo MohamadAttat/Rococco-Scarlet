@@ -1,0 +1,127 @@
+Array
+(
+    [0] => Array
+        (
+            [category_name] => Appetizers
+            [category_description] => A variety of small dishes served as the first course of a meal.
+            [category_image] => appetizers.jpg
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [item_name] => Vegetable Soup
+                            [item_description] => A warm and hearty soup made with seasonal vegetables and herbs.
+                            [item_price] => 4.49
+                        )
+
+                    [1] => Array
+                        (
+                            [item_name] => Caesar Salad
+                            [item_description] => Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing.
+                            [item_price] => 6.99
+                        )
+
+                    [2] => Array
+                        (
+                            [item_name] => Spring Rolls
+                            [item_description] => Crispy spring rolls filled with vegetables and served with a dipping sauce.
+                            [item_price] => 5.99
+                        )
+
+                )
+
+        )
+
+    [1] => Array
+        (
+            [category_name] => Main Courses
+            [category_description] => Hearty and satisfying main dishes to enjoy for lunch or dinner.
+            [category_image] => main_courses.jpg
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [item_name] => Chicken Alfredo
+                            [item_description] => Creamy pasta with grilled chicken breast, parmesan, and Alfredo sauce.
+                            [item_price] => 12.99
+                        )
+
+                    [1] => Array
+                        (
+                            [item_name] => Margherita Pizza
+                            [item_description] => Classic pizza topped with fresh mozzarella, tomato, basil, and olive oil.
+                            [item_price] => 9.99
+                        )
+
+                    [2] => Array
+                        (
+                            [item_name] => Beef Burger
+                            [item_description] => Juicy beef patty with lettuce, tomato, cheese, and special sauce, served with fries.
+                            [item_price] => 8.49
+                        )
+
+                    [3] => Array
+                        (
+                            [item_name] => Pasta Primavera
+                            [item_description] => Fresh vegetables sautÃ©ed with pasta and a light garlic olive oil sauce.
+                            [item_price] => 10.49
+                        )
+
+                    [4] => Array
+                        (
+                            [item_name] => Grilled Salmon
+                            [item_description] => Tender salmon fillet grilled and served with a side of roasted vegetables.
+                            [item_price] => 14.99
+                        )
+
+                    [5] => Array
+                        (
+                            [item_name] => Lamb Chops
+                            [item_description] => Grilled lamb chops served with a mint yogurt sauce and roasted potatoes.
+                            [item_price] => 18.99
+                        )
+
+                    [6] => Array
+                        (
+                            [item_name] => Shrimp Scampi
+                            [item_description] => Shrimp sautÃ©ed in garlic butter and served over linguine pasta.
+                            [item_price] => 13.49
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [category_name] => Desserts
+            [category_description] => Delicious sweet treats to end your meal on a high note.
+            [category_image] => desserts.jpg
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [item_name] => Chocolate Lava Cake
+                            [item_description] => Warm chocolate cake with a gooey molten center, served with vanilla ice cream.
+                            [item_price] => 7.49
+                        )
+
+                    [1] => Array
+                        (
+                            [item_name] => Cheesecake
+                            [item_description] => Classic cheesecake with a buttery graham cracker crust and rich cream cheese filling.
+                            [item_price] => 5.49
+                        )
+
+                    [2] => Array
+                        (
+                            [item_name] => Tiramisu
+                            [item_description] => Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.
+                            [item_price] => 6.99
+                        )
+
+                )
+
+        )
+
+)

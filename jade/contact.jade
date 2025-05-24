@@ -1,0 +1,91 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-contact(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					| Contact Us
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| Let us know if you have any concern about our menu, service or other information you want to have
+block append config
+	- var page_title = 'Contact'
+	- var Current_page = 'contact'
+block main
+	section.ct-info-section.padding-top-100.padding-bottom-100
+		div.container
+			.row
+				.col-md-8.col-sm-12
+					.swin-sc.swin-sc-title.style-2.text-left
+						p.title
+							span Get In Touch
+					.reservation-form.style-02
+						.swin-sc.swin-sc-contact-form.light.mtl.style-full
+							form
+								.form-group
+									.input-group
+										.input-group-text
+											i.fa.fa-user
+										input.form-control(type='text', placeholder='Username')
+								.form-group
+									.input-group
+										.input-group-text
+											i.fa.fa-envelope
+										input.form-control(type='text', placeholder='Email')
+								.form-group
+									.input-group
+										.input-group-text
+											.fa.fa-phone
+										input.form-control(type='text', placeholder='Phone')
+								.form-group
+									textarea.form-control(placeholder='Message')
+								.form-group
+									.swin-btn-wrap
+										a.link-underline.link-underline-opacity-0.swin-btn.center.form-submit(href='#')
+											span Send
+				.col-md-4
+					.swin-sc.swin-sc-title.style-2.text-left
+						p.title
+							span Contact Info
+					.swin-sc.swin-sc-contact
+						.media.item.d-flex.gap-2
+							.media-left
+								.wrapper-icon
+									i.icons.fa.fa-map-marker
+							.media-body
+								h4.media-heading.title Restaurent 1
+								.description 157 White Oak Drive Kansas City
+						.media.item.d-flex.gap-2
+							.media-left
+								.wrapper-icon
+									i.icons.fa.fa-map-marker
+							.media-body
+								h4.media-heading.title Restaurent 2
+								.description 158 White Oak Drive Kansas City
+						.media.item.d-flex.gap-2
+							.media-left
+								.wrapper-icon
+									i.icons.fa.fa-phone
+							.media-body
+								h4.media-heading.title Phone Number
+								.description (012) 978 645 312
+						.media.item.d-flex.gap-2
+							.media-left
+								.wrapper-icon
+									i.icons.fa.fa-envelope
+							.media-body
+								h4.media-heading.title Mail
+								.description
+									p hello@fooday.com
+									p contact@fooday.com
+	section.map-section.padding-bottom-100
+		.container
+			#map
+block page-scripts
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdXpLSJ3Ibdu-Phs9QOvpqb9d1DtPf7wQ")
+	script(src='assets/js/map.js')

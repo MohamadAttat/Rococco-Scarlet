@@ -1,0 +1,149 @@
+block header-config
+	- var Current_page = 'Home'
+
+.header-sidebar
+	.menu-content.st-menu.st-effect-1#menu-1
+		.swin-trigger-effects
+			button.btn-close.btn-close-white.st-btn-efect
+		.search-form.search-layout-01
+			form(action="#")
+				.input-group
+					input.form-control.search-input(type='text', placeholder='Search')
+					.input-group-text
+						i.fa.fa-search
+		.header-logo
+			a.logo.logo-static(href='index.html')
+				img.logo-img(src='assets/images/logo-white.png', alt='fooday')
+
+		nav#main-nav-offcanvas.main-nav-wrapper
+			.main-nav
+				ul#main-nav.nav.nav-pills
+					li.nav-item(class=(Current_page == 'Home' ? 'current-menu-item' : ''))
+						a.nav-link(href='index.html')
+							| Home
+					li.nav-item(class=(Current_page == 'About' ? 'current-menu-item' : ''))
+						a.nav-link(href='about.html') About
+					li.nav-item(class=(Current_page == 'Reservation' ? 'current-menu-item' : ''))
+						a.nav-link(href='reservation.html') Reservation
+					li.nav-item(class=(Current_parent == 'menu' ? 'current-menu-item' : ''))
+						a.nav-link(href='menu-grid-1.html') Menu
+					li.nav-item(class=(Current_parent == 'blogs' ? 'current-menu-item' : ''))
+						a.nav-link(href='blogs.html') Blogs
+					li.nav-item(class=(Current_page == 'Contact' ? 'current-menu-item' : ''))
+						a.nav-link(href='contact.html') Contact
+		ul.socials.socials-about.list-unstyled.list-inline
+			li.list-inline-item
+				a(href='#')
+					i.fa.fa-facebook
+			li.list-inline-item
+				a(href='#')
+					i.fa.fa-twitter
+			li.list-inline-item
+				a(href='#')
+					i.fa.fa-pinterest
+			li.list-inline-item
+				a(href='#')
+					i.fa.fa-google-plus
+header.header-transparent.header-sidebar-menu
+	.header-top.top-layout-02
+		.container
+			.topbar-left
+				.topbar-content
+					.item 
+						.wg-contact
+							i.fa.fa-map-marker
+							span 157 White Oak Drive Kansas City
+					.item 
+						.wg-contact
+							i.fa.fa-phone
+							span 012 987 650
+			.topbar-right
+				.topbar-content
+					.item
+						ul.socials-nb.list-inline.wg-social
+							li.list-inline-item
+								a(href='javascript:void(0)')
+									i.fa.fa-facebook
+							li.list-inline-item
+								a(href='javascript:void(0)')
+									i.fa.fa-twitter
+							li.list-inline-item
+								a(href='javascript:void(0)')
+									i.fa.fa-pinterest
+							li.list-inline-item
+								a(href='javascript:void(0)')
+									i.fa.fa-google-plus
+					.item
+						.wg-social
+							i.fa.fa-user
+							a.link-underline.link-underline-opacity-0(href='javascript:void(0)') My Account
+	.header-main
+		#st-trigger-effects.swin-trigger-effects.btn-open
+			button.st-btn-efect(data-effect='st-effect-1') &#9776;
+		.container
+			.open-offcanvas &#9776;
+			.header-logo
+				a.logo.logo-static(href='index.html')
+					img.logo-img(src='assets/images/logo-white.png', alt='fooday')
+				a.logo.logo-fixed(href='index.html')
+					img.logo-img(src='assets/images/logo.png', alt='fooday')
+			nav#main-nav-offcanvas.main-nav-wrapper
+				div.close-offcanvas-wrapper
+					span.close-offcanvas x
+				.main-nav
+					ul#main-nav.nav.nav-pills
+						li.nav-item.dropdown.dropdown--hover(class=(Current_page == 'Home' ? 'current-menu-item' : ''))
+							a.nav-link.dropdown-toggle(href='index.html')
+								| Home
+							i.fa.fa-angle-down.btn-open-dropdown
+							ul.dropdown-menu
+								li(class=(Current_page == 'Reservation' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='index.html') Home 1
+								li
+									a.dropdown-item(href='homepage2.html') Home 2
+								li
+									a.dropdown-item(href='homepage3.html') Home 3
+								li
+									a.dropdown-item(href='home-fullpage.html' target='_blank') Home Full Page
+								li
+									a.dropdown-item(href='home-shop.html') Home Shop
+								li
+									a.dropdown-item(href='homesidebarmenu.html') Home Sidebar Menu
+								li
+									a.dropdown-item(href='home-one-page.html' target='_blank') Home One Page
+								li
+									a.dropdown-item(href='home-boxed.html') Home Boxed
+						li.nav-item(class=(Current_page == 'About' ? 'current-menu-item' : ''))
+							a.nav-link(href='about.html') About
+						li.nav-item(class=(Current_page == 'Reservation' ? 'current-menu-item' : ''))
+							a.nav-link(href='reservation.html') Reservation
+						li.nav-item.dropdown.dropdown--hover(class=(Current_parent == 'menu' ? 'current-menu-item' : ''))
+							a.nav-link(href='menu-grid-1.html') Menu
+							ul.dropdown-menu
+								li(class=(Current_page == 'menu-classic' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='menu-classic.html') Menu Classic
+								li(class=(Current_page == 'menu-grid-01' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='menu-grid-1.html') Menu Grid 01
+								li(class=(Current_page == 'menu-grid-01' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='menu-grid-2.html') Menu Grid 02
+								li(class=(Current_page == 'menu-grid-03' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='menu-grid-3.html') Menu Grid 03
+								li(class=(Current_page == 'product-single' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='product-single.html') Product Detail
+								li(class=(Current_page == 'product-cart' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='product-cart.html') Product Cart
+								li(class=(Current_page == 'product-checkout' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='product-checkout.html') Product Checkout
+						li.nav-item.dropdown.dropdown--hover(class=(Current_parent == 'blogs' ? 'current-menu-item' : ''))
+							a.nav-link.dropdown-toggle(href='#', data-bs-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+								| Blog
+							i.fa.fa-angle-down.btn-open-dropdown
+							ul.dropdown-menu
+								li(class=(Current_page == 'blogs' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='blogs.html') Blog List
+								li(class=(Current_page == 'blog-single' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='blog-single.html') Blog Single
+								li(class=(Current_page == 'page-404' ? 'current-menu-item' : ''))
+									a.dropdown-item(href='page-404.html') 404 Page
+						li.nav-item(class=(Current_page == 'Contact' ? 'current-menu-item' : ''))
+							a.nav-link(href='contact.html') Contact

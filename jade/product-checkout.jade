@@ -1,0 +1,144 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-product(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(-5px);" data--50-top="transform: translateY(-15px);opacity:0.8;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					| Product Checkout
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| We hope you will like this product and give us 5 star rating
+block append config
+	- var page_title = 'Product Checkout'
+	- var Current_page = 'product-checkout'
+	- var Current_parent = 'menu'
+block main
+	.container
+		section.padding-top-100.padding-bottom-100
+			form.product-checkout-form
+				.row
+					.col-md-6
+						h3 Billing Details
+						.row
+							.col-md-6
+								.form-group
+									label First Name
+									input.form-control(type='text', placeholder='')
+							.col-md-6
+								.form-group
+									label Last Name
+									input.form-control(type='text', placeholder='')
+							.col-md-12
+								.form-group
+									label Company Name
+									input.form-control(type='text', placeholder='')
+							.col-md-12
+								.form-group
+									label Country
+									select.form-select
+										option United State
+										option United Kingdom
+										option Australia
+							.col-md-12
+								.form-group
+									label Street Address
+									input.form-control.mbm(type='text', placeholder='House Number')
+									input.form-control(type='text', placeholder='Apartment, suit, unit etc.')
+							.col-md-12
+								.form-group
+									label Town / City
+									input.form-control(type='text', placeholder='')
+							.col-md-12
+								.form-group
+									label State / Country
+									input.form-control(type='text', placeholder='')
+							.col-md-12
+								.form-group
+									label Postcode / ZIP
+									input.form-control(type='text', placeholder='')
+							.col-md-6
+								.form-group
+									label Phone
+									input.form-control(type='text', placeholder='')
+							.col-md-6
+								.form-group
+									label Email Address
+									input.form-control(type='text', placeholder='')
+					.col-md-6
+						h3 Additional Information
+						.form-group
+							label Other notes
+							textarea.form-control(name="", cols="30", rows="10")
+				.row
+					.col-md-12
+						h3 Your order
+						table.shop_table
+							thead
+								tr
+									th.product-name Product
+									th.product-total Total
+							tbody
+								tr.cart_item
+									td.product-name
+										| Chocolate Fudge Ripple 							 
+										strong.product-quantity × 1
+									td.product-total
+										span.woocommerce-Price-amount.amount
+											span.woocommerce-Price-currencySymbol $
+											| 25.0
+								tr.cart_item
+									td.product-name
+										| Coffee Caramel Swirl 							 
+										strong.product-quantity × 1
+									td.product-total
+										span.woocommerce-Price-amount.amount
+											span.woocommerce-Price-currencySymbol $
+											| 14.0
+							tfoot
+								tr.cart-subtotal
+									th Subtotal
+									td
+										span.woocommerce-Price-amount.amount
+											span.woocommerce-Price-currencySymbol $
+											| 39.0
+								tr.order-total
+									th Total
+									td
+										strong
+											span.woocommerce-Price-amount.amount
+												span.woocommerce-Price-currencySymbol $
+												| 39.0
+					.col-md-12
+						.checkout-product-options
+							h4 Checkout Method
+							.form-check
+								input#productQuantity1.form-check-input(type='radio', name='productOption', value='option1', checked='')
+								label.form-check-label(for='productQuantity1')
+									| Bank Transfer
+							.form-check
+								input#productQuantity2.form-check-input(type='radio', name='productOption', value='option2', checked='')
+								label.form-check-label(for='productQuantity2')
+									| Cast On Delivery
+							.form-check
+								input#productQuantity3.form-check-input(type='radio', name='productOption', value='option3', checked='')
+								label.form-check-label(for='productQuantity3')
+									| Paypal
+						.checkout-product-options
+							h4 Other options
+							.form-check
+								input#productOption2.form-check-input(type='checkbox', name='', value='option3', checked='')
+								label.form-check-label(for='productOption2')
+									| Ullam laboris nisi ut aliquip ex ea commodo
+							.form-check
+								input#productOption3.form-check-input(type='checkbox', name='', value='option3')
+								label.form-check-label(for='productOption3')
+									| Ut enim ad minim veniam
+					.col-md-12
+						button.swin-btn.checkout-submit
+							span Place Order
+

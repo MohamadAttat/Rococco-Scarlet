@@ -1,0 +1,529 @@
+extends includes/_layout-footer-classic
+block page_header
+	include includes/_header
+block page_title_slider
+	.top-header.top-slider.layout-shop
+		.slides
+			.slide-content.slide-layout-01
+				.container
+					.row
+						.col-6
+							.swin-sc.swin-sc-title.text-left
+								h3.title.animated.fadeInUp(data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="500") Deliciousness jumping into the mouth
+								h4.subtitle.animated.fadeInUp(data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="1000") Let Enjoy The Rhym Of Fooday Dishes
+							.btn-wrap.text-left.animated.fadeInUp(data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="1200")
+								a.btn.swin-btn.btn-transparent(href='javascript:void(0)') 
+									span Read More
+			.slide-bg
+				img.img.img-fluid(src='assets/images/slider/shop-slider.jpg', alt='')
+		.slides
+			.slide-content.slide-layout-01
+				.container
+					.row
+						.col-xs-6
+							.swin-sc.swin-sc-title.text-left
+								h3.title.animated.fadeInUp(data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="500") Where food speaks with your palate
+								h4.subtitle.animated.fadeInUp(data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="1000") We speak the good food language
+							.btn-wrap.text-left.animated.fadeInUp(data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="1200")
+								a.btn.swin-btn.btn-transparent(href='javascript:void(0)') 
+									span Read More
+			.slide-bg
+				img.img.img-fluid(src='assets/images/slider/shop-slider2.jpg', alt='')
+block append config
+	- var page_title = 'Home'
+	- var Current_page = 'Home'
+block main
+	.page-content.no-padding
+		section.service-section-02.padding-top-100
+			.container
+				.swin-sc.swin-sc-iconbox
+					.row
+						.col-md-3.col-sm-6.col-xs-12
+							.item.icon-box-02
+								.wrapper-icon
+									i.icons.fa.fa-shopping-bag
+									span.number 1
+								h4.title Online Order
+						.col-md-3.col-sm-6.col-xs-12
+							.item.icon-box-02
+								.wrapper-icon
+									i.icons.fa.fa-truck
+									span.number 2
+								h4.title Fast Delivery
+						.col-md-3.col-sm-6.col-xs-12
+							.item.icon-box-02
+								.wrapper-icon
+									i.icons.fa.fa-gift
+									span.number 3
+								h4.title Special Gift
+						.col-md-3.col-sm-6.col-xs-12
+							.item.icon-box-02
+								.wrapper-icon
+									i.icons.fa.fa-users
+									span.number 4
+								h4.title Friendly Support
+		section.product-sesction-02.padding-top-120.padding-bottom-100
+			div.container
+				.swin-sc.swin-sc-title
+					p.top-title
+						span Popular Product
+					h3.title Tasty And Good Price
+				.swin-sc.swin-sc-product.products-02
+					.products.nav-slider
+						.row
+							.col-md-3.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2a.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 25.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-3.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2b.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 5.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-3.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2c.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 20.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Madagasca Lopster
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-3.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2e.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 45.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a(href="javascript:void(0)") Jambon Salad
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-3.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2f.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 15.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-3.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2d.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 30.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Madagasca Lopster
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-3.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2a.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 25.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-3.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2b.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 5.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Potato
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+		section
+			.container
+				.row
+					.col-md-6.col-xs-12
+						.swin-sc.swin-sc-banner.item
+							.banner-featured-img
+								img.img.img-fluid(src='assets/images/banner-img-1.jpg', alt='fooday')
+								.banner-content
+									.banner-title HONEY CAKE
+									.banner-subtitle NEW DISHES THIS WEEK
+									a.link-underline.link-underline-opacity-0.swin-btn(href='#')
+										span Read More
+					.col-md-6.col-xs-12
+						.swin-sc.swin-sc-banner.right.item
+							.banner-featured-img
+								img.img.img-fluid(src='assets/images/banner-img-2.jpg', alt='fooday')
+								.banner-content
+									.banner-title HAM STORY
+									.banner-subtitle OUR HANDMADE PRODUCTS
+									a.link-underline.link-underline-opacity-0.swin-btn(href='#')
+										span Read More
+		section.padding-top-120.padding-bottom-100
+			div.container
+				.swin-sc.swin-sc-title
+					p.top-title
+						span New Product
+					h3.title Lunch And Dinner
+				.swin-sc.swin-sc-product.products-02.carousel-02
+					.products.nav-slider
+						.row.slick-padding.d-flex
+							.col-md-4.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2e.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 45.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a(href="javascript:void(0)") Jambon Salad Hot Bread
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-4.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2f.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 15.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak Potato
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-4.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2d.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 30.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Madagasca Lopster Tasty
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-4.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2f.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 15.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak Potato
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-4.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2a.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 25.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak Potato fly
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+							.col-md-4.col-sm-6.col-xs-12
+								.blog-item.item.swin-transition
+									.block-img
+										img.img.img-fluid(src='assets/images/product/product-2b.jpg', alt='')
+										.block-circle.price-wrapper
+											span.price.woocommerce-Price-amount.amount
+												span.price-symbol $
+												| 5.0
+										.group-btn
+											a.swin-btn.btn-link(href='javascript:void(0)')
+												i.icons.fa.fa-link
+											a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+												i.fa.fa-shopping-basket
+									.block-content
+										h5.title
+											a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak Potato
+										.product-info
+											ul.list-inline
+												li.list-inline-item.author
+													span Chef
+													span.text Don Joe
+												li.list-inline-item.rating
+													a(href="javascript:void(0)")
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star
+														i.fa.fa-star-o
+		section
+			.container
+				.shop-banner.banner-section
+					.row
+						.col-md-8.m-auto
+							.content-wrapper
+								h2.heading-title
+									| BIGGEST EVENT - SALE
+									span.text-large 50% OFF
+									| IN THIS WEEK
+								p.des
+									| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							.swin-btn-wrap.center.mtxxl
+								a.link-underline.link-underline-opacity-0.swin-btn.center.btn-transparent.btn-white(href='#') 
+									span READ MORE
+		section.padding-bottom-100.padding-top-100
+			.container
+				.swin-sc.swin-sc-partner(data-item='5')
+					.main-slider
+						.slides
+							.item
+								img.img.img-fluid(src='assets/images/partner/partner-01.png', alt='fooday')
+							.item
+								img.img.img-fluid(src='assets/images/partner/partner-02.png', alt='fooday')
+							.item
+								img.img.img-fluid(src='assets/images/partner/partner-03.png', alt='fooday')
+							.item
+								img.img.img-fluid(src='assets/images/partner/partner-02.png', alt='fooday')
+							.item
+								img.img.img-fluid(src='assets/images/partner/partner-01.png', alt='fooday')
+							.item
+								img.img.img-fluid(src='assets/images/partner/partner-03.png', alt='fooday')
+							.item
+								img.img.img-fluid(src='assets/images/partner/partner-02.png', alt='fooday')

@@ -1,0 +1,163 @@
+//- block header-config
+//-     - var Current_page = 'Home'
+header.header-box
+	.header-bg
+		.row
+			.col-xs-6
+				svg.bg-top-header.gambit_separator.gambit_sep_bottom.gambit-sep-type-wave1.gambit_sep_loaded(preserveaspectratio='xMidYMax meet', viewbox='0 0 1600 100', style='display: block;', data-height='60')
+					path.gambit_sep_decor1(style='opacity: 1;', d='M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z')
+			.col-xs-6
+				svg.bg-top-header.gambit_separator.gambit_sep_bottom.gambit-sep-type-wave1.gambit_sep_loaded(preserveaspectratio='xMidYMax meet', viewbox='0 0 1600 100', style='display: block;', data-height='60')
+					path.gambit_sep_decor1(style='opacity: 1;', d='M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z')
+	.header-top.top-layout-02
+		.container
+			.topbar-left
+				.topbar-content
+					.item 
+						.wg-contact
+							i.fa.fa-map-marker
+							span 157 White Oak Drive Kansas City
+					.item 
+						.wg-contact
+							i.fa.fa-phone
+							span 012 987 650
+			.topbar-right
+				.topbar-content
+					.item
+						ul.socials-nb.list-inline.wg-social
+							li.list-inline-item
+								a(href='javascript:void(0)')
+									i.fa.fa-facebook
+							li.list-inline-item
+								a(href='javascript:void(0)')
+									i.fa.fa-twitter
+							li.list-inline-item
+								a(href='javascript:void(0)')
+									i.fa.fa-pinterest
+							li.list-inline-item
+								a(href='javascript:void(0)')
+									i.fa.fa-google-plus
+					.item
+						.wg-social
+							i.fa.fa-user
+							a.link-underline.link-underline-opacity-0(href='javascript:void(0)') My Account
+	.header-main
+		.container
+			.header-main-wrapper
+				.open-offcanvas &#9776;
+				.utility-nav
+					.dropdown.dropdown-full-mobile
+						a.search-bar.dropdown-toggle(href='#', data-bs-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+							i.fa.fa-shopping-bag
+						.dropdown-menu.dropdown-menu-end
+							.cart_lite
+								.cart_lite_list
+									ul
+										li.cart_lite_item
+											a.cart_item_thumbnail(href='product-single.html')
+												img.img-fluid(width='150', height='100', src='assets/images/product/product-circle-1h.jpg', alt='')
+											.cart_item_summary
+												a.link-underline.link-underline-opacity-0.cart_item_title(href='product-single.html')
+													| Caramel Frappuccino
+												span.product-price-amount
+													span.quantity
+														| 1 × 
+													span.product-price-currencySymbol $
+													| 12.0
+											a.link-underline.link-underline-opacity-0.remove_from_cart_button(href='#') ×
+										li.cart_lite_item
+											a.cart_item_thumbnail(href='product-single.html')
+												img.img-fluid(width='150', height='100', src='assets/images/product/product-circle-1k.jpg', alt='')
+											.cart_item_summary
+												a.link-underline.link-underline-opacity-0.cart_item_title(href='product-single.html')
+													| Chocolate Fudge Ripple
+												span.product-price-amount
+													span.quantity
+														| 2 × 
+													span.product-price-currencySymbol $
+													| 24.0
+											a.link-underline.link-underline-opacity-0.remove_from_cart_button(href='#') ×
+								.cart_lite_total
+									p
+										strong Subtotal: 
+										span.product-price-amount
+											span.product-price-currencySymbo $
+											| 60.0
+								.cart_lite_button
+									a.link-underline.link-underline-opacity-0.swin-btn.btn-sm(href="product-cart.html")
+										span View Cart
+									a.link-underline.link-underline-opacity-0.swin-btn.btn-sm(href="product-checkout.html")
+										span Checkout
+					.dropdown
+						a.search-bar.dropdown-toggle(href='#', data-bs-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+							i.fa.fa-search
+						.dropdown-menu.dropdown-menu-end
+							.search-form
+								form(action="#")
+									.input-group
+										input.form-control(type='text', placeholder='Search')
+										.input-group-text
+											i.fa.fa-search
+				.header-logo
+					a.logo(href='index.html')
+						img.logo-img(src='assets/images/logo.png', alt='fooday')
+				nav#main-nav-offcanvas.main-nav-wrapper
+					div.close-offcanvas-wrapper
+						span.close-offcanvas x
+					.main-nav
+						ul#main-nav.nav.nav-pills
+							li.dropdown.dropdown--hover(class=(Current_page == 'Home' ? 'current-menu-item' : ''))
+								a.dropdown-toggle(href='index.html')
+									| Home
+								i.fa.fa-angle-down.btn-open-dropdown
+								ul.dropdown-menu
+									li(class=(Current_page == 'Reservation' ? 'current-menu-item' : ''))
+										a(href='index.html') Home 1
+									li
+										a(href='homepage2.html') Home 2
+									li
+										a(href='homepage3.html') Home 3
+									li
+										a(href='home-fullpage.html' target='_blank') Home Full Page
+									li
+										a(href='homesidebarmenu.html') Home Sidebar Menu
+									li
+										a(href='home-one-page.html' target='_blank') Home One Page
+									li
+										a(href='home-boxed.html') Home Boxed
+							li(class=(Current_page == 'About' ? 'current-menu-item' : ''))
+								a(href='about.html') About
+							li(class=(Current_page == 'Reservation' ? 'current-menu-item' : ''))
+								a(href='reservation.html') Reservation
+							li.dropdown.dropdown--hover(class=(Current_parent == 'menu' ? 'current-menu-item' : ''))
+								a.dropdown-toggle(href='menu-grid-1.html') 
+									| Menu
+								i.fa.fa-angle-down.btn-open-dropdown
+								ul.dropdown-menu
+									li(class=(Current_page == 'menu-classic' ? 'current-menu-item' : ''))
+										a(href='menu-classic.html') Menu Classic
+									li(class=(Current_page == 'menu-grid-01' ? 'current-menu-item' : ''))
+										a(href='menu-grid-1.html') Menu Grid 01
+									li(class=(Current_page == 'menu-grid-01' ? 'current-menu-item' : ''))
+										a(href='menu-grid-2.html') Menu Grid 02
+									li(class=(Current_page == 'menu-grid-03' ? 'current-menu-item' : ''))
+										a(href='menu-grid-3.html') Menu Grid 03
+									li(class=(Current_page == 'product-single' ? 'current-menu-item' : ''))
+										a(href='product-single.html') Product Detail
+									li(class=(Current_page == 'product-cart' ? 'current-menu-item' : ''))
+										a(href='product-cart.html') Product Cart
+									li(class=(Current_page == 'product-checkout' ? 'current-menu-item' : ''))
+										a(href='product-checkout.html') Product Checkout
+							li.dropdown.dropdown--hover(class=(Current_parent == 'blogs' ? 'current-menu-item' : ''))
+								a.dropdown-toggle(href='#', data-bs-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+									| Blog
+								i.fa.fa-angle-down.btn-open-dropdown
+								ul.dropdown-menu
+									li(class=(Current_page == 'blogs' ? 'current-menu-item' : ''))
+										a(href='blogs.html') Blog List
+									li(class=(Current_page == 'blog-single' ? 'current-menu-item' : ''))
+										a(href='blog-single.html') Blog Single
+									li(class=(Current_page == 'page-404' ? 'current-menu-item' : ''))
+										a(href='page-404.html') 404 Page
+							li(class=(Current_page == 'Contact' ? 'current-menu-item' : ''))
+								a(href='contact.html') Contact

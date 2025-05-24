@@ -1,0 +1,257 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-blog(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					| Newest Blog 
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| All information and stories from our blog will help you have a best meal for your day
+block append config
+	- var page_title = 'Blogs'
+	- var Current_page = 'blogs'
+	- var Current_parent = "blogs"
+block main
+	section.padding-top-100.padding-bottom-100
+		div.container
+			.row
+				.page-main.col-md-8
+					.blog-wrapper.swin-sc-blog-list
+						.swin-sc-blog-slider.style-02
+							.main-slider
+								.slides
+									.blog-item.swin-transition
+										.blog-featured-img
+											img.img.img-fluid(src='assets/images/blog/blog-slider-1.jpg', alt='fooday')
+										.blog-content
+											.blog-date
+												span.day 12
+												span.month Jun
+											.blog-info.clearfix
+												.blog-info-item.blog-view
+													p
+														i.fa.fa-eye
+														span 18
+													p
+												.blog-info-item.blog-comment
+													p
+														i.fa.fa-comment
+														span 18
+													p
+												.blog-info-item.blog-author
+													p
+														span Post By 
+														a.link-underline.link-underline-opacity-0(href='#') Admin
+													p
+											h3.blog-title
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#') How To Cook The Spicy Chinese Noodle For Cold Weather
+											p.blog-description
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utom enimtu ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+											.blog-readmore
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#')
+													| Read More 
+													i.fa.fa-angle-double-right
+						.swin-sc-blog-slider.style-02
+							.main-slider
+								.slides
+									.blog-item.swin-transition
+										.blog-featured-img
+											img.img.img-fluid(src='assets/images/blog/blog-slider-2.jpg', alt='fooday')
+										.blog-content
+											.blog-date
+												span.day 12
+												span.month Jun
+											.blog-info.clearfix
+												.blog-info-item.blog-view
+													p
+														i.fa.fa-eye
+														span 18
+													p
+												.blog-info-item.blog-comment
+													p
+														i.fa.fa-comment
+														span 18
+													p
+												.blog-info-item.blog-author
+													p
+														span Post By 
+														a.link-underline.link-underline-opacity-0(href='#') Admin
+													p
+											h3.blog-title
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#') How To Cook The Spicy Chinese Noodle For Cold Weather
+											p.blog-description
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utom enimtu ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+											.blog-readmore
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#')
+													| Read More 
+													i.fa.fa-angle-double-right
+						.swin-sc-blog-slider.main-carousel.style-02
+							.main-slider
+								.slides
+									.blog-item.swin-transition
+										.item-sliders
+											.blog-featured-img.item-sliders
+												img.img.img-fluid(src='assets/images/blog/blog-slider-4.jpg', alt='fooday')
+											.blog-featured-img.item-sliders
+												img.img.img-fluid(src='assets/images/blog/blog-slider-3.jpg', alt='fooday')
+										.blog-content
+											.blog-date
+												span.day 12
+												span.month Jun
+											.blog-info.clearfix
+												.blog-info-item.blog-view
+													p
+														i.fa.fa-eye
+														span 18
+													p
+												.blog-info-item.blog-comment
+													p
+														i.fa.fa-comment
+														span 18
+													p
+												.blog-info-item.blog-author
+													p
+														span Post By 
+														a.link-underline.link-underline-opacity-0(href='#') Admin
+													p
+											h3.blog-title
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#') How To Cook The Spicy Chinese Noodle For Cold Weather
+											p.blog-description
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utom enimtu ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+											.blog-readmore
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#')
+													| Read More 
+													i.fa.fa-angle-double-right
+						.swin-sc-blog-slider.video.style-02
+							.main-slider
+								.slides
+									.blog-item.swin-transition
+										.blog-featured-img
+											.format-video
+												img.img.img-fluid(src='assets/images/blog/blog-slider-5.jpg', alt='fooday')
+												.swin-sc.swin-sc-video
+													.play-wrap
+														a.play-btn.swipebox(href='https://vimeo.com/27814858')
+															i.play-icon.fa.fa-play
+										.blog-content
+											.blog-date
+												span.day 12
+												span.month Jun
+											.blog-info.clearfix
+												.blog-info-item.blog-view
+													p
+														i.fa.fa-eye
+														span 18
+													p
+												.blog-info-item.blog-comment
+													p
+														i.fa.fa-comment
+														span 18
+													p
+												.blog-info-item.blog-author
+													p
+														span Post By 
+														a.link-underline.link-underline-opacity-0(href='#') Admin
+													p
+											h3.blog-title
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#') How To Cook The Spicy Chinese Noodle For Cold Weather
+											p.blog-description
+												| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utom enimtu ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+											.blog-readmore
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#')
+													| Read More 
+													i.fa.fa-angle-double-right
+						.swin-sc-blog-slider.style-02
+							.main-slider
+								.slides
+									.blog-item.swin-transition
+										.blog-featured-img
+											.quote-format
+												img.img.img-fluid(src='assets/images/blog/blog-slider-6.jpg', alt='fooday')
+												.quote-text
+													i.fa.fa-quote-left.quote-icon
+													| The role of a good cook ware in the preparation of a sumptuous meal cannot be overemphasized.
+										.blog-content
+											.blog-date
+												span.day 12
+												span.month Jun
+											.blog-info.clearfix
+												.blog-info-item.blog-view
+													p
+														i.fa.fa-eye
+														span 18
+													p
+												.blog-info-item.blog-comment
+													p
+														i.fa.fa-comment
+														span 18
+													p
+												.blog-info-item.blog-author
+													p
+														span Post By 
+														a.link-underline.link-underline-opacity-0(href='#') Admin
+													p
+											h3.blog-title
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#') How To Cook The Spicy Chinese Noodle For Cold Weather
+											.blog-readmore
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#')
+													| Read More 
+													i.fa.fa-angle-double-right
+						.swin-sc-blog-slider.style-02
+							.main-slider
+								.slides
+									.blog-item.swin-transition
+										.blog-featured-img
+											.audio-format
+												img.img.img-fluid(src='assets/images/blog/blog-slider-7.jpg', alt='fooday')
+												audio(src="assets/audio/audio.mp3",preload="auto")
+										.blog-content
+											.blog-date
+												span.day 12
+												span.month Jun
+											.blog-info.clearfix
+												.blog-info-item.blog-view
+													p
+														i.fa.fa-eye
+														span 18
+													p
+												.blog-info-item.blog-comment
+													p
+														i.fa.fa-comment
+														span 18
+													p
+												.blog-info-item.blog-author
+													p
+														span Post By 
+														a.link-underline.link-underline-opacity-0(href='#') Admin
+													p
+											h3.blog-title
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#') How To Cook The Spicy Chinese Noodle For Cold Weather
+											.blog-readmore
+												a.link-underline.link-underline-opacity-0.swin-transition(href='#')
+													| Read More 
+													i.fa.fa-angle-double-right
+						.pagination-wrapper
+							nav(aria-label='Page navigation')
+								ul.pagination.d-inline-block
+									li.page-item.d-inline
+										a.link-underline.link-underline-opacity-0(href='#', aria-label='Previous')
+											span(aria-hidden='true') «
+									li.page-item.d-inline
+										a.link-underline.link-underline-opacity-0(href='#') 1
+									li.page-item.d-inline
+										a.link-underline.link-underline-opacity-0(href='#') 2
+									li.page-item.d-inline
+										a.link-underline.link-underline-opacity-0(href='#') 3
+									li.page-item.d-inline
+										a.link-underline.link-underline-opacity-0(href='#', aria-label='Next')
+											span(aria-hidden='true') »
+				.page-sidebar.col-md-4
+					include includes/_sidebar
+

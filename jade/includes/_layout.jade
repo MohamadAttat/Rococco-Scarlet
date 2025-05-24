@@ -1,0 +1,214 @@
+block config
+	- var page_title = 'Home'
+	- var Current_page = 'Home'
+	- var Current_parent = 'Home'
+doctype html
+html(lang='en', itemscope itemtype="http://schema.org/WebPage")
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title #{page_title}
+		// Bootstrap CSS
+		link(href='assets/vendors/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+		// Font Awesome
+		link(rel='stylesheet', href='assets/vendors/font-awesome/css/font-awesome.min.css')
+		// HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+		// WARNING: Respond.js doesn't work if you view the page via file://
+		// IE 9
+
+		// Vendors
+		link(rel='stylesheet', href='assets/vendors/flexslider/flexslider.min.css')
+		link(rel='stylesheet', href='assets/vendors/swipebox/css/swipebox.min.css')
+		link(rel='stylesheet', href='assets/vendors/slick/slick.min.css')
+		link(rel='stylesheet', href='assets/vendors/slick/slick-theme.min.css')
+		link(rel='stylesheet', href='assets/vendors/animate.min.css')
+		link(rel='stylesheet', href='assets/vendors/bootstrap-datepicker/css/bootstrap-datepicker.min.css')
+		link(rel='stylesheet', href='assets/vendors/pageloading/css/component.min.css')
+		link(rel='stylesheet', href='assets/vendors/dialog/css/dialog.css')
+		block page-css-vendors
+		// Font-icon
+		link(rel='stylesheet', href='assets/fonts/font-icon/style.css')
+		// Style
+		link(rel='stylesheet', type='text/css', href='assets/css/layout.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/elements.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/extra.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/widget.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/bootstrap-override.css')
+		link#colorpattern(rel='stylesheet', type='text/css', href='assets/css/color/colordefault.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/responsive.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/live-settings.css')
+
+		block page-css
+		// Google Font
+		link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,700i', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Rancho', rel='stylesheet')
+
+		// Script Loading Page
+		script(src='assets/vendors/html5shiv.js')
+		script(src='assets/vendors/respond.min.js')
+		script(src='assets/vendors/pageloading/js/snap.svg-min.js')
+		script(src='assets/vendors/pageloading/sidebartransition/js/modernizr.custom.js')
+	body(class= page_title === "Home Boxed" ? "layout-boxed" : "")
+		.pagewrap#pagewrap
+			.wrapper-content#html-content
+				block page_header
+				.page-container
+					block page_title_slider
+					.page-content-wrapper
+						block main
+				include _footer
+				a#totop(href='#').animated
+					i.fa.fa-angle-double-up
+			#loader.pageload-overlay(data-opening='m -5,-5 0,70 90,0 0,-70 z m 5,35 c 0,0 15,20 40,0 25,-20 40,0 40,0 l 0,0 C 80,30 65,10 40,30 15,50 0,30 0,30 z')
+				.loader-wrapper
+					svg(xmlns='http://www.w3.org/2000/svg', width='100%', height='100%', viewbox='0 0 80 60', preserveaspectratio='none')
+						path(d='m -5,-5 0,70 90,0 0,-70 z m 5,5 c 0,0 7.9843788,0 40,0 35,0 40,0 40,0 l 0,60 c 0,0 -3.944487,0 -40,0 -30,0 -40,0 -40,0 z')
+					.sk-circle
+						.sk-circle1.sk-child
+						.sk-circle2.sk-child
+						.sk-circle3.sk-child
+						.sk-circle4.sk-child
+						.sk-circle5.sk-child
+						.sk-circle6.sk-child
+						.sk-circle7.sk-child
+						.sk-circle8.sk-child
+						.sk-circle9.sk-child
+						.sk-circle10.sk-child
+						.sk-circle11.sk-child
+						.sk-circle12.sk-child
+					.sk-circle.sk-circle-out
+						.sk-circle1.sk-child
+						.sk-circle2.sk-child
+						.sk-circle3.sk-child
+						.sk-circle4.sk-child
+						.sk-circle5.sk-child
+						.sk-circle6.sk-child
+						.sk-circle7.sk-child
+						.sk-circle8.sk-child
+						.sk-circle9.sk-child
+						.sk-circle10.sk-child
+						.sk-circle11.sk-child
+						.sk-circle12.sk-child
+		#add-to-cart-dialog.add-to-card-dialog.dialog
+			.dialog__overlay
+			.dialog__content
+				.modal-body
+					.row
+						.col-md-5
+							.dialog-product-img
+								img.img.img-fluid(src="assets/images/product/product-full-02.jpg",alt="fooday")
+						.col-md-7
+							.dialog-product-title The Cracker Barrel's Country Boy Breakfast
+							.dialog-product-price $25.0
+							.product-quanlity
+								.input-group
+									input.form-control(type="text", name="quanlity", placeholder="", value="1")
+									a.quanlity-plus(href="javascript:void(0)")
+										i.fa.fa-plus
+									a.quanlity-minus(href="javascript:void(0)")
+										i.fa.fa-minus
+						.col-md-12
+							.dialog-product-options
+								p.option-title More Options
+								.form-check
+									input#productQuantity1.form-check-input(type='radio', name='productOption', value='option1', checked='')
+									label.form-check-label(for='productQuantity1')
+										| Aliquip ex ea commodo consequat
+								.form-check
+									input#productQuantity2.form-check-input(type='radio', name='productOption', value='option2', checked='')
+									label.form-check-label(for='productQuantity2')
+										| Quis ullam laboris nisi ut aliquip ex ea commodo
+								.form-check
+									input#productQuantity3.form-check-input(type='radio', name='productOption', value='option3', checked='')
+									label.form-check-label(for='productQuantity3')
+										| Commodo consequat aliquip
+							.dialog-product-options
+								p.option-title Other options
+								.form-check
+									input#productOption2.form-check-input(type='checkbox', name='', value='option3', checked='')
+									label.form-check-label(for='productOption2')
+										| Ullam laboris nisi ut aliquip ex ea commodo
+								.form-check
+									input#productOption3.form-check-input(type='checkbox', name='', value='option3')
+									label.form-check-label(for='productOption3')
+										| Ut enim ad minim veniam
+				.modal-footer
+					.dialog-button-group
+						a.link-underline.link-underline-opacity-0.swin-btn.btn-transparent(href="product-cart.html")
+							span View Cart
+						a.link-underline.link-underline-opacity-0.swin-btn.open-toast(data-toggle="dialog", data-target="#add-to-cart-dialog")
+							span Order Now
+		.add-to-card-toast.toast
+			.toast_content
+				.alert.alert-success(role='alert')
+					button.close.close-toast(type='button', aria-label='Close')
+						span(aria-hidden='true') ×
+					strong Order Successfully!
+					|  This message will disappearance in 5 seconds
+		#live-setting.hidden-sm.hidden-xs
+			a#open-popup
+				i.fa.fa-paint-brush
+			form#popup
+				h5.live-title Site Color
+				.popup-inner
+					.box-setting
+						.pattern-color
+							p Pattern Color Variable:
+							p.text-small ( You can change any color as you want in source code. )
+							.color-setting
+								ul.list-unstyled
+									li.colordefault
+										span Default
+										a
+									li.color01
+										span Pizza + Bread
+										a
+									li.color02
+										span Wine
+										a
+									li.color03
+										span Coffee
+										a
+									li.color04
+										span Vegetable
+										a
+									li.color05
+										span Cream
+										a
+		block body-scripts
+			// jQuery
+			script(src='assets/vendors/jquery-3.7.1.min.js')
+			// Bootstrap JavaScript
+			script(src='assets/vendors/bootstrap/js/bootstrap.bundle.min.js')
+			script.
+				const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+				const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+				const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+				const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+			// Vendors
+			script(src='assets/vendors/flexslider/jquery.flexslider-min.js')
+			script(src='assets/vendors/swipebox/js/jquery.swipebox.min.js')
+			script(src='assets/vendors/slick/slick.min.js')
+			script(src='assets/vendors/isotope/isotope.pkgd.min.js')
+			script(src='assets/vendors/jquery-countTo/jquery.countTo.min.js')
+			script(src='assets/vendors/jquery-appear/jquery.appear.min.js')
+			script(src='assets/vendors/parallax/parallax.min.js')
+			script(src='assets/vendors/gmaps/gmaps.min.js')
+			script(src='assets/vendors/audiojs/audio.min.js')
+			script(src='assets/vendors/vide/jquery.vide.min.js')
+			script(src='assets/vendors/pageloading/js/svgLoader.min.js')
+			script(src='assets/vendors/pageloading/js/classie.min.js')
+			script(src='assets/vendors/pageloading/sidebartransition/js/sidebarEffects.min.js')
+			script(src='assets/vendors/nicescroll/jquery.nicescroll.min.js')
+			script(src='assets/vendors/wowjs/wow.min.js')
+			script(src='assets/vendors/skrollr.min.js')
+			script(src='assets/vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js')
+			script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' integrity='sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb' crossorigin='anonymous')
+			script(src='assets/vendors/jquery-cookie/js.cookie.js')
+
+			// Own script
+			script(src='assets/js/layout.js')
+			script(src='assets/js/elements.js')
+			script(src='assets/js/widget.js')
+		block page-scripts

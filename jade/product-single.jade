@@ -1,0 +1,291 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-product(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(-5px);" data--50-top="transform: translateY(-15px);opacity:0.8;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					| Product Single
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| We hope you will like this product and give us 5 star rating
+block append config
+	- var page_title = 'Product Single'
+	- var Current_page = 'product-single'
+	- var Current_parent = 'menu'
+block main
+	.container
+		section.product-single.padding-top-100.padding-bottom-100
+			.row
+				.col-md-6
+					.product-image
+						.product-featured-image
+							.main-slider
+								.slides
+									.featured-image-item
+										img.img.img-fluid(src="assets/images/product/product-full-02.jpg",alt="fooday")
+									.featured-image-item
+										img.img.img-fluid(src="assets/images/product/product-full-03.jpg",alt="fooday")
+									.featured-image-item
+										img.img.img-fluid(src="assets/images/product/product-full-04.jpg",alt="fooday")
+									.featured-image-item
+										img.img.img-fluid(src="assets/images/product/product-full-02.jpg",alt="fooday")
+									.featured-image-item
+										img.img.img-fluid(src="assets/images/product/product-full-03.jpg",alt="fooday")
+							.nav-slider(data-width='150')
+								ul.slides.list-inline
+									li.swin-transition.thumbnail-image-item
+										a.testimonial-nav-item(href='javascript:void(0)')
+											img.img.img-fluid.swin-transition(src='assets/images/product/product-thumb-02.jpg', alt='fooday')
+									li.swin-transition.thumbnail-image-item
+										a.testimonial-nav-item(href='javascript:void(0)')
+											img.img.img-fluid.swin-transition(src='assets/images/product/product-thumb-03.jpg', alt='fooday')
+									li.swin-transition.thumbnail-image-item
+										a.testimonial-nav-item(href='javascript:void(0)')
+											img.img.img-fluid.swin-transition(src='assets/images/product/product-thumb-04.jpg', alt='fooday')
+									li.swin-transition.thumbnail-image-item
+										a.testimonial-nav-item(href='javascript:void(0)')
+											img.img.img-fluid.swin-transition(src='assets/images/product/product-thumb-02.jpg', alt='fooday')
+									li.swin-transition.thumbnail-image-item
+										a.testimonial-nav-item(href='javascript:void(0)')
+											img.img.img-fluid.swin-transition(src='assets/images/product/product-thumb-03.jpg', alt='fooday')
+				.col-md-6
+					.product-summary
+						.product-title
+							.title Lobster Parsley Plate Lemons
+						.product-price
+							.price
+								span.currency-symbol $ 
+								| 100.0
+						.product-info
+							ul.list-inline
+								li.list-inline-item.author
+									span Chef
+									span.text Don Joe
+								li.list-inline-item.rating
+									a(href="javascript:void(0)")
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star
+										i.fa.fa-star-o
+									span 4 Reviews
+						.product-desc
+							p Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard.
+						.product-meta-info
+							.meta-info-item
+								.meta-info-caption
+									| Category:
+								.meta-info-text
+									a(href="javascript:void(0)") Breakfast
+									| ,
+									a(href="javascript:void(0)") Seafood
+									| ,
+									a(href="javascript:void(0)") Main Menu
+							.meta-info-item
+								.meta-info-caption
+									| Tags:
+								.meta-info-text
+									a(href="javascript:void(0)") Shrimp
+									| ,
+									a(href="javascript:void(0)") Vegetables
+						.product-quanlity
+							form(action="#")
+								.input-group
+									input.form-control(type="text", name="quanlity", placeholder="", value="1")
+									a.quanlity-plus(href="javascript:void(0)")
+										i.fa.fa-plus
+									a.quanlity-minus(href="javascript:void(0)")
+										i.fa.fa-minus
+								.add-to-cart
+									a.link-underline.link-underline-opacity-0(href="javascript:void(0)").swin-btn 
+										span Add To Cart
+						.product-share
+							span.caption Share
+							ul.socials.list-unstyled.list-inline
+								li.list-inline-item
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook
+								li.list-inline-item
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter
+								li.list-inline-item
+									a(href='javascript:void(0)')
+										i.fa.fa-pinterest
+								li.list-inline-item
+									a(href='javascript:void(0)')
+										i.fa.fa-google-plus
+			.row
+				.col-md-12
+					.product-tab-content
+						// Nav tabs
+						ul.nav.nav-tabs(role='tablist')
+							li.nav-item(role='presentation')
+								a.nav-link.active(href='#product-desc-tab', aria-controls='product-desc-tab', role='tab', data-bs-toggle='tab', data-bs-target='#product-desc-tab') DESCRIPTIONS
+							li.nav-item(role='presentation')
+								a.nav-link(href='#product-review', aria-controls='product-review', role='tab', data-bs-toggle='tab', data-bs-target='#product-review') REVIEWS
+						// Tab panes
+						.tab-content
+							#product-desc-tab.tab-pane.active(role='tabpanel')
+								p Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot. 
+								p Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean.
+							#product-review.tab-pane(role='tabpanel')
+								#reviews
+									#comments
+										h3.product-reviews-title
+											| 1 review
+										ul.commentlist.list-unstyled
+											li
+												.comment_container
+													img.avatar.avatar-60wp-user-avatar.wp-user-avatar-60.alignnone.photo.avatar-default(src='http://2.gravatar.com/avatar/59c82b1d2c60537f900fb191b3cb611b?s=60&d=mm&r=g', width='60', height='60', alt='')
+													.comment-text
+														.star-rating
+															i.fa.fa-star
+															i.fa.fa-star
+															i.fa.fa-star
+															i.fa.fa-star
+															i.fa.fa-star-o
+														p.meta
+															strong(itemprop='author') Maria
+															|  –
+															time(itemprop='datePublished', datetime='2013-06-07T15:56:24+00:00') June 7, 2017
+															| :
+														.description(itemprop='description')
+															p This product is Awesome!!!
+											li
+												.comment_container
+													img.avatar.avatar-60wp-user-avatar.wp-user-avatar-60.alignnone.photo.avatar-default(src='assets/images/blog/blog-comment-avatar03.jpg', width='60', height='60', alt='')
+													.comment-text
+														.star-rating
+															i.fa.fa-star
+															i.fa.fa-star
+															i.fa.fa-star
+															i.fa.fa-star
+															i.fa.fa-star
+														p.meta
+															strong(itemprop='author') Kelvin
+															|  –
+															time(itemprop='datePublished', datetime='2013-06-07T15:56:24+00:00') June 8, 2017
+															| :
+														.description(itemprop='description')
+															p I recommended it!!!
+		section.product-related.padding-bottom-100
+			.swin-sc.swin-sc-title.style-2
+				p.title
+					span You May Also Like
+			.swin-sc.swin-sc-product.products-02.carousel-01.woocommerce
+				.products.nav-slider
+					.blog-item.item.swin-transition
+						.block-img
+							img.img.img-fluid(src='assets/images/product/product-2a.jpg', alt='')
+							.block-circle.price-wrapper
+								span.price.woocommerce-Price-amount.amount
+									span.price-symbol $
+									| 25.0
+							.group-btn
+								a.swin-btn.btn-link(href='javascript:void(0)')
+									i.icons.fa.fa-link
+								a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+									i.fa.fa-shopping-basket
+						.block-content
+							h5.title
+								a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak Potato fly
+							.info
+								.author
+									| Chef 
+									span.name Don Joe
+								.star-rating
+									span.rating(style='width:80%')
+										strong.rating
+					.blog-item.item.swin-transition
+						.block-img
+							img.img.img-fluid(src='assets/images/product/product-2b.jpg', alt='')
+							.block-circle.price-wrapper
+								span.price.woocommerce-Price-amount.amount
+									span.price-symbol $
+									| 5.0
+							.group-btn
+								a.swin-btn.btn-link(href='javascript:void(0)')
+									i.icons.fa.fa-link
+								a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+									i.fa.fa-shopping-basket
+						.block-content
+							h5.title
+								a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak Potato
+							.info
+								.author
+									| Chef 
+									span.name Don Joe
+								.star-rating
+									span.rating(style='width:80%')
+										strong.rating
+					.blog-item.item.swin-transition
+						.block-img
+							img.img.img-fluid(src='assets/images/product/product-2c.jpg', alt='')
+							.block-circle.price-wrapper
+								span.price.woocommerce-Price-amount.amount
+									span.price-symbol $
+									| 20.0
+							.group-btn
+								a.swin-btn.btn-link(href='javascript:void(0)')
+									i.icons.fa.fa-link
+								a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+									i.fa.fa-shopping-basket
+						.block-content
+							h5.title
+								a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Madagasca Lopster Tasty
+							.info
+								.author
+									| Chef 
+									span.name Don Joe
+								.star-rating
+									span.rating(style='width:80%')
+										strong.rating
+					.blog-item.item.swin-transition
+						.block-img
+							img.img.img-fluid(src='assets/images/product/product-2e.jpg', alt='')
+							.block-circle.price-wrapper
+								span.price.woocommerce-Price-amount.amount
+									span.price-symbol $
+									| 45.0
+							.group-btn
+								a.swin-btn.btn-link(href='javascript:void(0)')
+									i.icons.fa.fa-link
+								a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+									i.fa.fa-shopping-basket
+						.block-content
+							h5.title
+								a(href="javascript:void(0)") Jambon Salad Hot Bread
+							.info
+								.author
+									| Chef 
+									span.name Don Joe
+								.star-rating
+									span.rating(style='width:80%')
+										strong.rating
+					.blog-item.item.swin-transition
+						.block-img
+							img.img.img-fluid(src='assets/images/product/product-2f.jpg', alt='')
+							.block-circle.price-wrapper
+								span.price.woocommerce-Price-amount.amount
+									span.price-symbol $
+									| 15.0
+							.group-btn
+								a.swin-btn.btn-link(href='javascript:void(0)')
+									i.icons.fa.fa-link
+								a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+									i.fa.fa-shopping-basket
+						.block-content
+							h5.title
+								a.link-underline.link-underline-opacity-0(href="javascript:void(0)") Mexico Beafsteak Potato
+							.info
+								.author
+									| Chef 
+									span.name Don Joe
+								.star-rating
+									span.rating(style='width:80%')
+										strong.rating

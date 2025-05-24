@@ -1,0 +1,192 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-reservation(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(-5px);" data--50-top="transform: translateY(-15px);opacity:0.8;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					|Reservation
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| Just a few click to make the reservation online for saving your time and money
+block append config
+	- var page_title = 'Reservation'
+	- var Current_page = 'Reservation'
+	- var Current_parent = 'Reservation'
+block main
+	section.section-reservation-form.padding-top-100.padding-bottom-100
+		.container
+			.section-content
+				.swin-sc.swin-sc-title.style-2
+					h3.title
+						span Reservation Form
+				.reservation-form
+					.row
+						.col-md-8.offset-md-2
+							p.reservation-form-title.text-center
+								| We willing to help you make the reservation online to save your time and money or you can call us directly through the customer service hotline:
+								span.text-default  225-88888
+					.swin-sc.swin-sc-contact-form.light.mtl
+						form
+							.form-group
+								.input-group
+									.input-group-text
+										i.fa.fa-user
+									input.form-control(type='text', placeholder='Username')
+								.input-group
+									.input-group-text
+										i.fa.fa-envelope
+									input.form-control(type='text', placeholder='Email')
+							.form-group
+								.input-group
+									.input-group-text
+										.fa.fa-phone
+									input.form-control(type='text', placeholder='Phone')
+								.input-group
+									.input-group-text
+										i.fa.fa-male
+									select.form-select(type='text', placeholder='People')
+										option 1 person
+										option 2 People
+										option 3 People
+										option 4 People
+										option 5 People
+										option 6 People
+										option 7 People
+										option 8 People
+										option 9 People
+										option 10 People
+							.form-group
+								.input-group
+									.input-group-text
+										i.fa.fa-calendar
+									input.form-control.datepicker(type='text', placeholder='Date')
+								.input-group
+									.input-group-text
+										.fa.fa-clock-o
+									select.form-select(type='text', placeholder='Time')
+										option 7:00 AM
+										option 8:00 AM
+										option 9:00 AM
+										option 10:00 AM
+										option 11:00 AM
+										option 12:00 AM
+										option 1:00 PM
+										option 2:00 PM
+										option 3:00 PM
+										option 4:00 PM
+										option 5:00 PM
+										option 6:00 PM
+										option 7:00 PM
+										option 8:00 PM
+										option 9:00 PM
+										option 10:00 PM
+							.form-group
+								textarea.form-control
+							.form-group
+								.swin-btn-wrap.center
+									a.link-underline.link-underline-opacity-0.swin-btn.center.form-submit(href='#') 
+										span Book Table
+				.section-deco
+					img.img-deco(src="assets/images/pages/reservation-showcase.png",alt="fooday")
+	section.section-reservation-service.padding-top-100.padding-bottom-100(data-bottom-top="background-position: 50% 100px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;")
+		.container
+			.section-content
+				.swin-sc.swin-sc-title.style-2.light
+					h3.title
+						span Fooday Best Service
+				.swin-sc.swin-sc-iconbox.light
+					.row
+						.col-md-3.col-sm-6.col-xs-12
+							.item.icon-box-02.wow.fadeInUpShort
+								.wrapper-icon
+									i.icons.swin-icon-dish
+									span.number 1
+								h4.title Reservation
+								.description
+									| Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et
+						.col-md-3.col-sm-6.col-xs-12
+							.item.icon-box-02.wow.fadeInUpShort(data-wow-delay="0.5s")
+								.wrapper-icon
+									i.icons.swin-icon-dinner-2
+									span.number 2
+								h4.title Private Event
+								.description
+									| Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et
+						.col-md-3.col-sm-6.col-xs-12
+							.item.icon-box-02.wow.fadeInUpShort(data-wow-delay="1s")
+								.wrapper-icon
+									i.icons.swin-icon-browser
+									span.number 3
+								h4.title Online Order
+								.description
+									| Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et
+						.col-md-3.col-sm-6.col-xs-12
+							.item.icon-box-02.wow.fadeInUpShort(data-wow-delay="1.5s")
+								.wrapper-icon
+									i.icons.swin-icon-delivery
+									span.number 4
+								h4.title Fast Delivery
+								.description
+									| Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et
+	section.section-reservation-events.padding-top-100.padding-bottom-100
+		.container
+			.section-content
+				.swin-sc.swin-sc-title.style-2
+					h3.title
+						span Upcoming Events
+				.row
+					.col-md-6.col-sm-12.col-xs-12
+						.swin-sc.swin-sc-event.swin-transition.wow.fadeInLeft
+							.swin-sc-event-inner
+								.event-info.clearfix
+									.event-date
+										span.day 12
+										span.month Jun
+									.event-title
+										a.link-underline.link-underline-opacity-0.swin-transition(href='#') Hong Kong Tasty Food Cooking Event
+								.event-featured-img
+									img.img.img-fluid.mx-auto.d-block(src='assets/images/event/event-01.jpg', alt='fooday')
+								.event-countdown.swin-transition
+									.event-countdown-inner
+										.event-img
+											img(src='assets/images/event/event-01.jpg', alt='')
+										ul.event-countdown-content.list-inline.d-flex.justify-content-around
+											li.list-inline-item
+												span.num 03
+												span.cap /days
+											li.list-inline-item
+												span.num 50
+												span.cap /foods
+											li.list-inline-item
+												span.num 290
+												span.cap /guests
+					.col-md-6.col-sm-12.col-xs-12
+						.swin-sc.swin-sc-event.swin-transition.wow.fadeInRight
+							.swin-sc-event-inner
+								.event-info.clearfix
+									.event-date
+										span.day 12
+										span.month Jun
+									.event-title
+										a.link-underline.link-underline-opacity-0.swin-transition(href='#') Regional Cuisine Down Home Cooking
+								.event-featured-img
+									img.img.img-fluid.mx-auto.d-block(src='assets/images/event/event-02.jpg', alt='fooday')
+								.event-countdown.swin-transition
+									.event-countdown-inner
+										.event-img
+											img(src='assets/images/event/event-01.jpg', alt='')
+										ul.event-countdown-content.list-inline.d-flex.justify-content-around
+											li.list-inline-item
+												span.num 02
+												span.cap /days
+											li.list-inline-item
+												span.num 20
+												span.cap /foods
+											li.list-inline-item
+												span.num 120
+												span.cap /guests

@@ -1,0 +1,496 @@
+Array
+(
+    [0] => Array
+        (
+            [category_name] => Appetizers
+            [category_description] => A variety of small dishes served as the first course of a meal.
+            [category_image] => appetizers.jpg
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [item_name] => Vegetable Soup
+                            [item_description] => A warm and hearty soup made with seasonal vegetables and herbs.
+                            [item_price] => 4.49
+                        )
+
+                    [1] => Array
+                        (
+                            [item_name] => Caesar Salad
+                            [item_description] => Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing.
+                            [item_price] => 6.99
+                        )
+
+                    [2] => Array
+                        (
+                            [item_name] => Spring Rolls
+                            [item_description] => Crispy spring rolls filled with vegetables and served with a dipping sauce.
+                            [item_price] => 5.99
+                        )
+
+                )
+
+        )
+
+    [1] => Array
+        (
+            [category_name] => Main Courses
+            [category_description] => Hearty and satisfying main dishes to enjoy for lunch or dinner.
+            [category_image] => main_courses.jpg
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [item_name] => Chicken Alfredo
+                            [item_description] => Creamy pasta with grilled chicken breast, parmesan, and Alfredo sauce.
+                            [item_price] => 12.99
+                        )
+
+                    [1] => Array
+                        (
+                            [item_name] => Margherita Pizza
+                            [item_description] => Classic pizza topped with fresh mozzarella, tomato, basil, and olive oil.
+                            [item_price] => 9.99
+                        )
+
+                    [2] => Array
+                        (
+                            [item_name] => Beef Burger
+                            [item_description] => Juicy beef patty with lettuce, tomato, cheese, and special sauce, served with fries.
+                            [item_price] => 8.49
+                        )
+
+                    [3] => Array
+                        (
+                            [item_name] => Pasta Primavera
+                            [item_description] => Fresh vegetables sautÃ©ed with pasta and a light garlic olive oil sauce.
+                            [item_price] => 10.49
+                        )
+
+                    [4] => Array
+                        (
+                            [item_name] => Grilled Salmon
+                            [item_description] => Tender salmon fillet grilled and served with a side of roasted vegetables.
+                            [item_price] => 14.99
+                        )
+
+                    [5] => Array
+                        (
+                            [item_name] => Lamb Chops
+                            [item_description] => Grilled lamb chops served with a mint yogurt sauce and roasted potatoes.
+                            [item_price] => 18.99
+                        )
+
+                    [6] => Array
+                        (
+                            [item_name] => Shrimp Scampi
+                            [item_description] => Shrimp sautÃ©ed in garlic butter and served over linguine pasta.
+                            [item_price] => 13.49
+                        )
+
+                )
+
+        )
+
+    [2] => Array
+        (
+            [category_name] => Desserts
+            [category_description] => Delicious sweet treats to end your meal on a high note.
+            [category_image] => desserts.jpg
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [item_name] => Chocolate Lava Cake
+                            [item_description] => Warm chocolate cake with a gooey molten center, served with vanilla ice cream.
+                            [item_price] => 7.49
+                        )
+
+                    [1] => Array
+                        (
+                            [item_name] => Cheesecake
+                            [item_description] => Classic cheesecake with a buttery graham cracker crust and rich cream cheese filling.
+                            [item_price] => 5.49
+                        )
+
+                    [2] => Array
+                        (
+                            [item_name] => Tiramisu
+                            [item_description] => Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.
+                            [item_price] => 6.99
+                        )
+
+                )
+
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => Michael Doe
+            [position] => Head Chef
+            [image_url] => assets/images/team/team-12.png
+            [facebook_url] => https://facebook.com/michaeldoe
+            [twitter_url] => https://twitter.com/michaeldoe
+            [pinterest_url] => https://pinterest.com/michaeldoe
+            [google_plus_url] => https://plus.google.com/michaeldoe
+            [is_visible] => 1
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => Teresa Doe
+            [position] => Sous Chef
+            [image_url] => assets/images/team/team-13.png
+            [facebook_url] => https://facebook.com/teresadoe
+            [twitter_url] => https://twitter.com/teresadoe
+            [pinterest_url] => https://pinterest.com/teresadoe
+            [google_plus_url] => https://plus.google.com/teresadoe
+            [is_visible] => 1
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => Benjamin Mark
+            [position] => Pastry Chef
+            [image_url] => assets/images/team/team-12.png
+            [facebook_url] => https://facebook.com/benjaminmark
+            [twitter_url] => https://twitter.com/benjaminmark
+            [pinterest_url] => https://pinterest.com/benjaminmark
+            [google_plus_url] => https://plus.google.com/benjaminmark
+            [is_visible] => 1
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => Sophia Lee
+            [position] => Line Cook
+            [image_url] => assets/images/team/team-13.png
+            [facebook_url] => https://facebook.com/sophialee
+            [twitter_url] => https://twitter.com/sophialee
+            [pinterest_url] => https://pinterest.com/sophialee
+            [google_plus_url] => https://plus.google.com/sophialee
+            [is_visible] => 1
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [testimonial_name] => John Doe
+            [testimonial_position] => Software Engineer
+            [testimonial_message] => This platform has completely transformed the way we work. Highly recommended for anyone seeking efficiency!
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [1] => Array
+        (
+            [testimonial_name] => Sarah Ruiz
+            [testimonial_position] => Director
+            [testimonial_message] => Amazing experience! The support team is outstanding, and the system is intuitive and user-friendly.
+            [testimonial_image_url] => assets/images/testi/testimonial-4.png
+        )
+
+    [2] => Array
+        (
+            [testimonial_name] => Tracey Lewis
+            [testimonial_position] => Designer
+            [testimonial_message] => The design features are sleek and modern. I love how easy it is to showcase my work.
+            [testimonial_image_url] => assets/images/testi/testimonial-2.jpg
+        )
+
+    [3] => Array
+        (
+            [testimonial_name] => Jamie Erickson
+            [testimonial_position] => Manager
+            [testimonial_message] => This tool has helped me manage my team effectively. Our productivity has increased significantly.
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [4] => Array
+        (
+            [testimonial_name] => Michael Brown
+            [testimonial_position] => Business Owner
+            [testimonial_message] => The customer service team was very responsive and resolved my issue in no time.
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [5] => Array
+        (
+            [testimonial_name] => Ethan White
+            [testimonial_position] => Marketing Specialist
+            [testimonial_message] => This system has saved me countless hours of manual work. Automation at its best!
+            [testimonial_image_url] => assets/images/testi/testimonial-5.jpg
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [testimonial_name] => John Doe
+            [testimonial_position] => Software Engineer
+            [testimonial_message] => This platform has completely transformed the way we work. Highly recommended for anyone seeking efficiency!
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [1] => Array
+        (
+            [testimonial_name] => Sarah Ruiz
+            [testimonial_position] => Director
+            [testimonial_message] => Amazing experience! The support team is outstanding, and the system is intuitive and user-friendly.
+            [testimonial_image_url] => assets/images/testi/testimonial-4.png
+        )
+
+    [2] => Array
+        (
+            [testimonial_name] => Tracey Lewis
+            [testimonial_position] => Designer
+            [testimonial_message] => The design features are sleek and modern. I love how easy it is to showcase my work.
+            [testimonial_image_url] => assets/images/testi/testimonial-2.jpg
+        )
+
+    [3] => Array
+        (
+            [testimonial_name] => Jamie Erickson
+            [testimonial_position] => Manager
+            [testimonial_message] => This tool has helped me manage my team effectively. Our productivity has increased significantly.
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [4] => Array
+        (
+            [testimonial_name] => Michael Brown
+            [testimonial_position] => Business Owner
+            [testimonial_message] => The customer service team was very responsive and resolved my issue in no time.
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [5] => Array
+        (
+            [testimonial_name] => Ethan White
+            [testimonial_position] => Marketing Specialist
+            [testimonial_message] => This system has saved me countless hours of manual work. Automation at its best!
+            [testimonial_image_url] => assets/images/testi/testimonial-5.jpg
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => Michael Doe
+            [position] => Head Chef
+            [image_url] => assets/images/team/team-12.png
+            [facebook_url] => https://facebook.com/michaeldoe
+            [twitter_url] => https://twitter.com/michaeldoe
+            [pinterest_url] => https://pinterest.com/michaeldoe
+            [google_plus_url] => https://plus.google.com/michaeldoe
+            [is_visible] => 1
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => Teresa Doe
+            [position] => Sous Chef
+            [image_url] => assets/images/team/team-13.png
+            [facebook_url] => https://facebook.com/teresadoe
+            [twitter_url] => https://twitter.com/teresadoe
+            [pinterest_url] => https://pinterest.com/teresadoe
+            [google_plus_url] => https://plus.google.com/teresadoe
+            [is_visible] => 1
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => Benjamin Mark
+            [position] => Pastry Chef
+            [image_url] => assets/images/team/team-12.png
+            [facebook_url] => https://facebook.com/benjaminmark
+            [twitter_url] => https://twitter.com/benjaminmark
+            [pinterest_url] => https://pinterest.com/benjaminmark
+            [google_plus_url] => https://plus.google.com/benjaminmark
+            [is_visible] => 1
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => Sophia Lee
+            [position] => Line Cook
+            [image_url] => assets/images/team/team-13.png
+            [facebook_url] => https://facebook.com/sophialee
+            [twitter_url] => https://twitter.com/sophialee
+            [pinterest_url] => https://pinterest.com/sophialee
+            [google_plus_url] => https://plus.google.com/sophialee
+            [is_visible] => 1
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => Michael Doe
+            [position] => Head Chef
+            [image_url] => assets/images/team/team-12.png
+            [facebook_url] => https://facebook.com/michaeldoe
+            [twitter_url] => https://twitter.com/michaeldoe
+            [pinterest_url] => https://pinterest.com/michaeldoe
+            [google_plus_url] => https://plus.google.com/michaeldoe
+            [is_visible] => 1
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => Teresa Doe
+            [position] => Sous Chef
+            [image_url] => assets/images/team/team-13.png
+            [facebook_url] => https://facebook.com/teresadoe
+            [twitter_url] => https://twitter.com/teresadoe
+            [pinterest_url] => https://pinterest.com/teresadoe
+            [google_plus_url] => https://plus.google.com/teresadoe
+            [is_visible] => 1
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [name] => Benjamin Mark
+            [position] => Pastry Chef
+            [image_url] => assets/images/team/team-12.png
+            [facebook_url] => https://facebook.com/benjaminmark
+            [twitter_url] => https://twitter.com/benjaminmark
+            [pinterest_url] => https://pinterest.com/benjaminmark
+            [google_plus_url] => https://plus.google.com/benjaminmark
+            [is_visible] => 1
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [name] => Sophia Lee
+            [position] => Line Cook
+            [image_url] => assets/images/team/team-13.png
+            [facebook_url] => https://facebook.com/sophialee
+            [twitter_url] => https://twitter.com/sophialee
+            [pinterest_url] => https://pinterest.com/sophialee
+            [google_plus_url] => https://plus.google.com/sophialee
+            [is_visible] => 1
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [testimonial_name] => John Doe
+            [testimonial_position] => Software Engineer
+            [testimonial_message] => This platform has completely transformed the way we work. Highly recommended for anyone seeking efficiency!
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [1] => Array
+        (
+            [testimonial_name] => Sarah Ruiz
+            [testimonial_position] => Director
+            [testimonial_message] => Amazing experience! The support team is outstanding, and the system is intuitive and user-friendly.
+            [testimonial_image_url] => assets/images/testi/testimonial-4.png
+        )
+
+    [2] => Array
+        (
+            [testimonial_name] => Tracey Lewis
+            [testimonial_position] => Designer
+            [testimonial_message] => The design features are sleek and modern. I love how easy it is to showcase my work.
+            [testimonial_image_url] => assets/images/testi/testimonial-2.jpg
+        )
+
+    [3] => Array
+        (
+            [testimonial_name] => Jamie Erickson
+            [testimonial_position] => Manager
+            [testimonial_message] => This tool has helped me manage my team effectively. Our productivity has increased significantly.
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [4] => Array
+        (
+            [testimonial_name] => Michael Brown
+            [testimonial_position] => Business Owner
+            [testimonial_message] => The customer service team was very responsive and resolved my issue in no time.
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [5] => Array
+        (
+            [testimonial_name] => Ethan White
+            [testimonial_position] => Marketing Specialist
+            [testimonial_message] => This system has saved me countless hours of manual work. Automation at its best!
+            [testimonial_image_url] => assets/images/testi/testimonial-5.jpg
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [testimonial_name] => John Doe
+            [testimonial_position] => Software Engineer
+            [testimonial_message] => This platform has completely transformed the way we work. Highly recommended for anyone seeking efficiency!
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [1] => Array
+        (
+            [testimonial_name] => Sarah Ruiz
+            [testimonial_position] => Director
+            [testimonial_message] => Amazing experience! The support team is outstanding, and the system is intuitive and user-friendly.
+            [testimonial_image_url] => assets/images/testi/testimonial-4.png
+        )
+
+    [2] => Array
+        (
+            [testimonial_name] => Tracey Lewis
+            [testimonial_position] => Designer
+            [testimonial_message] => The design features are sleek and modern. I love how easy it is to showcase my work.
+            [testimonial_image_url] => assets/images/testi/testimonial-2.jpg
+        )
+
+    [3] => Array
+        (
+            [testimonial_name] => Jamie Erickson
+            [testimonial_position] => Manager
+            [testimonial_message] => This tool has helped me manage my team effectively. Our productivity has increased significantly.
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [4] => Array
+        (
+            [testimonial_name] => Michael Brown
+            [testimonial_position] => Business Owner
+            [testimonial_message] => The customer service team was very responsive and resolved my issue in no time.
+            [testimonial_image_url] => assets/images/testi/testimonial-3.jpg
+        )
+
+    [5] => Array
+        (
+            [testimonial_name] => Ethan White
+            [testimonial_position] => Marketing Specialist
+            [testimonial_message] => This system has saved me countless hours of manual work. Automation at its best!
+            [testimonial_image_url] => assets/images/testi/testimonial-5.jpg
+        )
+
+)

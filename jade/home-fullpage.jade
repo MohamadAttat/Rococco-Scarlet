@@ -1,0 +1,481 @@
+extends includes/_layout-fullpage
+block page_header
+	include includes/_header-fullpage
+block append config
+	- var page_title = 'Home Fullpage'
+	- var Current_page = 'Home Fullpage'
+	- var Current_parent = "Home"
+block page-css-vendors
+	link(rel='stylesheet', href='assets/vendors/fullpage/jquery.fullpage.min.css')
+block page-scripts
+	script(src='assets/vendors/fullpage/jquery.fullpage.min.js')
+	script(src='assets/vendors/fullpage/jquery.fullpage.extensions.min.js')
+	script(src='assets/js/fullpage.js')
+block main
+	#fullpage
+		.section.nav-light.pdn(style="background-image: url('assets/images/slider/header-bg.jpg');")
+			.top-header.top-bg-video
+				.slides
+					.slide-content.slide-layout-02.slide-style-02
+						.container
+							.slide-content-inner.text-center
+								img.img.img-fluid.slide-icon.animated(src='assets/images/slider/slider3-icon.png', data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="500",alt="fooday")
+								h3.slide-title.animated(data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="800") LET'S MEAT
+								p.slide-sub-title.animated( data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="1200")
+									span.line-before
+									span.line-after
+									span.text
+										| The Good Taste Of Food
+								img.img.img-fluid.slide-icon.animated(src='assets/images/slider/slider3-icon2.png', data-ani-in="fadeInUp", data-ani-out="fadeOutDown", data-ani-delay="1500",alt="fooday")
+		.section
+			section.about-us-session
+				div.container
+					div.row
+						.col-md-6.col-sm-12
+							.swin-sc.swin-sc-title.style-4.margin-bottom-20.margin-top-50
+								p.top-title
+									span Eat and dream
+								h3.title Crazy Food
+							p.des.font-bold.text-center LET THE DELICIOUSNESS JUMPING INTO THE MOUTH
+							p.des.margin-bottom-20.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullam laboris nisi ut aliquip ex ea commodo consequat.
+						.col-md-6.colsm-12
+							img.img.img-fluid.wow.fadeInRight(src='assets/images/fullpage-food.jpg', alt='')
+		.section.nav-light(style="background-image: url('assets/images/fullpage-bg.jpg');")
+			section
+				div.container
+					div.row
+						div.offset-lg-3.col-lg-6.col-md-8
+							.swin-sc.swin-sc-title.text-left.light
+								p.top-title.wow.fadeInUp
+									span Eat Fast
+								h3.title.wow.fadeInUp(data-wow-delay="0.3s") Hot Menu Today
+							.swin-sc.swin-sc-product.products-01.style-04.light.swin-vetical-slider.wow.fadeInUp(data-wow-delay="0.6s")
+								.row
+									.col-md-12
+										.products.nav-slider(data-height="200")
+											.item.product-01
+												.item-left
+													img.img.img-fluid(src='assets/images/product/product-2a.jpg', alt='')
+													.content-wrapper
+														a.link-underline.link-underline-opacity-0.title The Cracker Barrel's Country Boy Breakfast
+														.dot .....................................................................
+														.des Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+												.item-right
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+											.item.product-01
+												.item-left
+													img.img.img-fluid(src='assets/images/product/product-2b.jpg', alt='')
+													.content-wrapper
+														a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite 
+														.dot .....................................................................
+														.des Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+												.item-right
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 45.0
+											.item.product-01
+												.item-left
+													img.img.img-fluid(src='assets/images/product/product-2c.jpg', alt='')
+													.content-wrapper
+														a.link-underline.link-underline-opacity-0.title Grandpa's Country Fried Breakfast 
+														.dot .....................................................................
+														.des Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+												.item-right
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 30.0
+											.item.product-01
+												.item-left
+													img.img.img-fluid(src='assets/images/product/product-2d.jpg', alt='')
+													.content-wrapper
+														a.link-underline.link-underline-opacity-0.title Chinese Chicken Bread Spicy Soup
+														.dot .....................................................................
+														.des Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+												.item-right
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 12.0
+											.item.product-01
+												.item-left
+													img.img.img-fluid(src='assets/images/product/product-2b.jpg', alt='')
+													.content-wrapper
+														a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite 
+														.dot .....................................................................
+														.des Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+												.item-right
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 45.0
+											.item.product-01
+												.item-left
+													img.img.img-fluid(src='assets/images/product/product-2a.jpg', alt='')
+													.content-wrapper
+														a.link-underline.link-underline-opacity-0.title The Cracker Barrel's Country Boy Breakfast
+														.dot .....................................................................
+														.des Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+												.item-right
+													span.price.woocommerce-Price-amount.amount
+														span.price-symbol $
+														| 25.0
+		.section
+			section.product-sesction-03
+				div.container
+					div.row
+						div.col-md-12
+							.swin-sc.swin-sc-title
+								p.top-title.wow.fadeInUp
+									span Eat different
+								h3.title.wow.fadeInUp(data-wow-delay="0.3s") Top Quality Menu
+							.swin-sc.swin-sc-product.products-01.style-01.woocommerce.wow.fadeInUp(data-wow-delay="0.6s")
+								.row
+									.col-md-4
+										.cat-wrapper.main-slider
+											.item
+												img.img.img-fluid(src='assets/images/product/pd-cat-dinner.png', alt='')
+											.item
+												img.img.img-fluid(src='assets/images/product/pd-cat-dessert.png', alt='')
+											.item
+												img.img.img-fluid(src='assets/images/product/pd-cat-lunch.png', alt='')
+											.item
+												img.img.img-fluid(src='assets/images/product/pd-cat-dessert.png', alt='')
+									.col-md-8
+										.products.nav-slider
+											.item-slick
+												.row
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Frish Cheese Chip
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 25.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01b.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Grandpa's Country Fried For Breakfast
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 30.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01c.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 27.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01d.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 17.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01e.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Spicy Meal 01
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 22.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01f.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Spicy special 01
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 23.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01l.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 21.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 25.0
+											.item-slick
+												.row
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01e.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Spicy Meal 01
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 22.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01f.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Spicy special 01
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 23.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01l.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 21.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Old Timer's Meat Breakfasthip
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 25.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Frish Cheese Chip
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 25.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01b.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Grandpa's Country Fried For Breakfast
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 30.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01c.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 27.0
+													.col-md-3.col-sm-6.col-xs-12
+														.item.product-01
+															.block-img
+																img(src='assets/images/product/product-01d.jpg', alt='')
+																.group-btn
+																	a.swin-btn.btn-link(href='javascript:void(0)')
+																		i.icons.fa.fa-link
+																	a.swin-btn.btn-add-to-card(href='javascript:void(0)')
+																		i.fa.fa-shopping-basket
+															a.link-underline.link-underline-opacity-0.title Uncle Herschel's Favorite
+															span.price.woocommerce-Price-amount.amount
+																span.price-symbol $
+																| 17.0
+		.section.pbn.nav-light(style="background-image: url('assets/images/background/footer-bg2.jpg');")
+			footer
+				.footer-mains
+					.container
+						.row
+							.col-lg-4
+								.ft-fixed-area.wow.fadeInLeft
+									.reservation-box
+										.reservation-wrap
+											h3.res-title Open Hour
+											.res-date-time
+												.res-date-time-item
+													.res-date
+														.res-date-item
+															.res-date-text
+																p Tuesday:
+															.res-date-dot .......................................
+													.res-time
+														.res-time-item
+															p 7AM - 9PM
+													.clearfix
+												.res-date-time-item
+													.res-date
+														.res-date-item
+															.res-date-text
+																p Wednesday:
+															.res-date-dot .......................................
+													.res-time
+														.res-time-item
+															p 7AM - 9PM
+													.clearfix
+												.res-date-time-item
+													.res-date
+														.res-date-item
+															.res-date-text
+																p Thursday:
+															.res-date-dot .......................................
+													.res-time
+														.res-time-item
+															p 7AM - 9PM
+													.clearfix
+												.res-date-time-item
+													.res-date
+														.res-date-item
+															.res-date-text
+																p Friday:
+															.res-date-dot .......................................
+													.res-time
+														.res-time-item
+															p 7AM - 9PM
+													.clearfix
+												.res-date-time-item
+													.res-date
+														.res-date-item
+															.res-date-text
+																p Saturday:
+															.res-date-dot .......................................
+													.res-time
+														.res-time-item
+															p 7AM - 9PM
+													.clearfix
+												.res-date-time-item
+													.res-date
+														.res-date-item
+															.res-date-text
+																p Sunday:
+															.res-date-dot .......................................
+													.res-time
+														.res-time-item
+															p 7AM - 9PM
+													.clearfix
+												.res-date-time-item
+													.res-date
+														.res-date-item
+															.res-date-text
+																p Monday:
+															.res-date-dot .......................................
+													.res-time
+														.res-time-item
+															p Close
+													.clearfix
+											h3.res-title Reservation Numbers
+											p.res-number (617)-276-8031
+							.col-lg-8
+								.ft-widget-area
+									.ft-area1
+										.swin-wget.swin-wget-about
+											.clearfix
+												a.wget-logo
+													img.img.img-fluid(src='assets/images/logo-ft.png', alt='')
+												ul.socials.socials-about.list-unstyled.list-inline
+													li.list-inline-item
+														a(href='#')
+															i.fa.fa-facebook
+													li.list-inline-item
+														a(href='#')
+															i.fa.fa-twitter
+													li.list-inline-item
+														a(href='#')
+															i.fa.fa-pinterest
+													li.list-inline-item
+														a(href='#')
+															i.fa.fa-google-plus
+											.wget-about-content
+												p
+													| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor.
+											.about-contact-info.clearfix
+												.address-info
+													.info-icon
+														i.fa.fa-map-marker
+													.info-content
+														p 157 White Oak Drive Kansas City 
+														p 689 Lynn Street South Boston
+												.phone-info
+													.info-icon
+														i.fa.fa-mobile-phone
+													.info-content
+														p (617)-276-8031
+														p (617)-276-8031
+												.email-info
+													.info-icon
+														i.fa.fa-envelope
+													.info-content
+														p admin@fooday.com
+														p support@fooday.com

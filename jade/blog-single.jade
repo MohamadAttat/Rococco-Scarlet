@@ -1,0 +1,195 @@
+extends includes/_layout
+block page_header
+	include includes/_header
+block page_title_slider
+	.page-title.page-blog(data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;")
+		.container
+			.title-wrapper
+				.title(data-top="transform: translateY(0px);opacity:1;" data--120-top="transform: translateY(-30px);opacity:0;" data-anchor-target=".page-title")
+					|Blog Single
+				.divider(data-top="opacity:1;" data--120-top="opacity:0;" data-anchor-target=".page-title")
+					span.line-before
+					span.dot
+					span.line-after
+				.subtitle(data-top="transform: translateY(0px);opacity:1;" data--20-top="transform: translateY(5px);" data--50-top="transform: translateY(15px);opacity:0.8;" data--120-top="transform: translateY(30px);opacity:0;" data-anchor-target=".page-title")
+					| All information and stories from our blog will help you have a best meal for your day
+block append config
+	- var page_title = 'Blog Single'
+	- var Current_page = 'blog-single'
+	- var Current_parent = "blogs"
+block main
+	div.container
+		.padding-top-100.padding-bottom-100
+			.row
+				.page-main.col-md-8
+					.blog-wrapper.swin-blog-single
+						.swin-sc-blog-slider.style-02
+							.main-slider
+								.slides
+									.blog-item
+										.blog-featured-img
+											img.img.img-fluid(src='assets/images/blog/blog-05.jpg', alt='fooday')
+										.blog-content
+											.blog-meta-info
+												.blog-date
+													span.day 12
+													span.month Jun
+												.blog-info.clearfix
+													.blog-info-item.blog-view
+														p
+															i.fa.fa-eye
+															span 18
+														p
+													.blog-info-item.blog-comment
+														p
+															i.fa.fa-comment
+															span 18
+														p
+													.blog-info-item.blog-author
+														p
+															span Post By 
+															a(href='#') Admin
+														p
+												h3.blog-title
+													a.link-underline.link-underline-opacity-0.swin-transition(href='#') How To Cook The Spicy Chinese Noodle
+											.blog-content-inner
+												p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse utinti cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpato qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.
+												p Threm ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utoi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+												blockquote
+													p
+														| The role of a good cook ware in the preparation of a sumptuous meal cannot be overempha.
+													footer
+														| Kelly Doe 
+														cite(title='Source Title') / Food Blogger
+												p Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse utinti cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+												p Laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptat velit esse utinti cillum dolore eu fugiat nulla pariatur.
+												.row
+													.col-sm-4.col-xs-12
+														p
+															img.img.img-fluid.center-block(src="assets/images/blog/blog-single-01.jpg",alt="fooday")
+													.col-sm-4.col-xs-12
+														p
+															img.img.img-fluid.center-block(src="assets/images/blog/blog-single-02.jpg",alt="fooday")
+													.col-sm-4.col-xs-12
+														p
+															img.img.img-fluid.center-block(src="assets/images/blog/blog-single-03.jpg",alt="fooday")
+												p Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utm aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse utin.
+											.blog-footer.clearfix
+												.blog-share
+													ul.socials.list-unstyled.list-inline
+														li.list-inline-item
+															a(href='#')
+																i.fa.fa-facebook
+														li.list-inline-item
+															a(href='#')
+																i.fa.fa-twitter
+														li.list-inline-item
+															a(href='#')
+																i.fa.fa-pinterest
+														li.list-inline-item
+															a(href='#')
+																i.fa.fa-google-plus
+												.blog-tags
+													strong Tags:
+													a(href="#") Fooday Menu
+													| , 
+													a(href="#") Delicious Meal
+						.blog-navigation.clearfix
+							.navi-item.next-post.pull-right
+								a.link-underline.link-underline-opacity-0(href='#') Next
+									i.fa.fa-chevron-right
+							.navi-item.prev-post.pull-left
+								a.link-underline.link-underline-opacity-0(href='#') Previous
+									i.fa.fa-chevron-left
+						.blog-author-area
+							.media.d-flex.gap-2
+								.author-image.media-left
+									a(href='#')
+										img.media-object(src='assets/images/blog/blog-author.jpg', alt='fooday')
+								.media-body
+									p.author-name.media-heading.mb-1 KELLY DOE
+									p.mb-2 Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.
+									ul.socials-nb.list-inline.mb-0
+										li.list-inline-item
+											a(href='#')
+												i.fa.fa-facebook
+										li.list-inline-item
+											a(href='#')
+												i.fa.fa-twitter
+										li.list-inline-item
+											a(href='#')
+												i.fa.fa-pinterest
+										li.list-inline-item
+											a(href='#')
+												i.fa.fa-google-plus
+						.blog-comment
+							.comment-heading.swin-sc.swin-sc-title.style-2.text-left
+								p.title
+									span 3 Comments
+							.comment-area
+								.comment-list.media-list.list-unstyled
+									.comment-item.media.d-flex.gap-2
+										.author-comment-image.media-left
+											a(href='#')
+												img.media-object(src='assets/images/blog/blog-comment-avatar01.jpg', alt='fooday')
+										.media-body
+											p.author-comment-name.media-heading Andy Doe
+											p Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.
+											ul.list-inline
+												li.list-inline-item.comment-date
+													| 25.12.2016
+												li.list-inline-item.comment-reply
+													a.link-underline.link-underline-opacity-0(href='#')
+														i.fa.fa-mail-reply
+														| Reply
+											.comment-item.media.d-flex.gap-2
+												.author-comment-image.media-left
+													a(href='#')
+														img.media-object(src='assets/images/blog/blog-comment-avatar02.jpg', alt='fooday')
+												.media-body
+													p.author-comment-name.media-heading Mary Louis
+													p Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.
+													ul.list-inline
+														li.list-inline-item.comment-date
+															| 25.12.2016
+														li.list-inline-item.comment-reply
+															a.link-underline.link-underline-opacity-0(href='#')
+																i.fa.fa-mail-reply
+																| Reply
+									.comment-item.media.d-flex.gap-2
+										.author-comment-image.media-left
+											a(href='#')
+												img.media-object(src='assets/images/blog/blog-comment-avatar03.jpg', alt='fooday')
+										.media-body
+											p.author-comment-name.media-heading Kelvin Tang
+											p Picasio ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini.
+											ul.list-inline
+												li.list-inline-item.comment-date
+													| 25.12.2016
+												li.list-inline-item.comment-reply
+													a.link-underline.link-underline-opacity-0(href='#')
+														i.fa.fa-mail-reply
+														| Reply
+							.comment-form
+								.comment-heading.swin-sc.swin-sc-title.style-2.text-left
+									p.title
+										span Leave Comments
+								.swin-sc.swin-sc-contact-form.light.mtl.margin-bottom-100
+									form
+										.form-group
+											.input-group
+												.input-group-text
+													i.fa.fa-user
+												input.form-control(type='text', placeholder='Username')
+											.input-group
+												.input-group-text
+													i.fa.fa-envelope
+												input.form-control(type='text', placeholder='Email')
+										.form-group
+											textarea.form-control
+										.form-group
+											.swin-btn-wrap
+												a.link-underline.link-underline-opacity-0.swin-btn.form-submit(href='#') 
+													span Send
+				.page-sidebar.col-md-4
+					include includes/_sidebar
