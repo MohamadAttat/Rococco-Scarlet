@@ -64,8 +64,8 @@ jQuery(function ($) {
 			$main_slider.flexslider({
 				selector: ".slides > .item",
 				animation: "slide",
-				controlNav: false,
-				directionNav: false,
+				controlNav: true,
+				directionNav: true,
 				animationLoop: false,
 				slideshow: false,
 				sync: $nav_slider,
@@ -614,7 +614,7 @@ jQuery(function ($) {
 		fooday.sc_isotope();
 
 		// fooday.sc_team();
-		
+
 
 		fooday.swipebox();
 		// fooday.sc_testimonial();

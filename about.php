@@ -18,10 +18,10 @@ include 'header.php';
       <div id="html-content" class="wrapper-content">
       <?php
 
-include 'top_banner.php';
+      include 'top_banner.php';
 
 
-?>
+      ?>
      
         <div class="page-container">
           <div data-bottom-top="background-position: 50% 50px;" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -50px;" class="page-title page-about">
@@ -462,6 +462,7 @@ include 'top_banner.php';
                 </div>
               </div>
             </section>
+            <?php include "block_booking_deposit.php"; ?>
             <!-- <section class="section-reservation-form padding-top-100 padding-bottom-100">
               <div class="container">
                 <div class="section-content">
@@ -553,10 +554,10 @@ include 'top_banner.php';
         </div>
         <?php
 
-include 'footer.php';
+        include 'footer.php';
 
 
-?>
+        ?>
 
         <!-- <footer>
           <div class="subscribe-section"><img src="assets/images/background/bg5.png" alt="" class="img-subscribe">
@@ -849,10 +850,10 @@ include 'footer.php';
     </div>
     <?php
 
-include 'scripts.php';
+    include 'scripts.php';
 
 
-?>
+    ?>
     <!-- <script src="assets/vendors/jquery-3.7.1.min.js"></script>
   
     <script src="assets/vendors/flexslider/jquery.flexslider-min.js"></script>

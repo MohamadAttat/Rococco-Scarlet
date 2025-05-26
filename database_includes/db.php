@@ -1,12 +1,13 @@
 <?php
 // Database credentials
 $host = $_SERVER['HTTP_HOST'];
-if ($host === 'localhost' || $host === '127.0.0.1') {
+
+if ($host === 'localhost' || $host === 'localhost:81' || $host === '127.0.0.1') {
     $servername = "localhost"; // Host
     $username = "root"; // Database username
     $password = ""; // Database password
     $dbname = "scarlet_db"; // Database name
-    $port = 80; // Port (optional, default for MySQL)
+    $port = 3307; // Port (optional, default for MySQL)
 } else {
     $servername = "localhost"; // Host
     $username = "rococo"; // Database username
@@ -17,7 +18,7 @@ if ($host === 'localhost' || $host === '127.0.0.1') {
 
 // Create connection
 // $conn = new mysqli($servername, $username, $password, $dbname, $port);
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 
 

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Optima;
+  src: url('../fonts/optima/OPTIMA.TTF');
+}
+
+@font-face {
+  font-family: Heletica;
+  src: url('../fonts/helvetica/Helvetica.ttf');
+}
+
+* {
+  font-family: Helvetica;
+}
+
+.title,
+.page-title .title {
+  font-family: Optima;
+}
+
+.close-offcanvas {
+  cursor: pointer;
+}
+
+#main-nav>li {
+  padding: 0 8px;
+}
+
+#section-booking-deposit ul {
+  font-size: 16px;
+}
+
+.footer-bottom {
+  height: auto;
+  padding-bottom: 1rem;
+  opacity: 1;
+  background: none !important;
+}
+
+.footer-bottom * {
+  color: white !important;
+}

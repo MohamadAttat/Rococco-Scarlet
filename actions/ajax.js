@@ -1,22 +1,22 @@
 var currentUrl = window.location.href;
 
 $(document).ready(function () {
-	    // Get the current page URL
-        var currentUrl = window.location.pathname;
+    // Get the current page URL
+    var currentUrl = window.location.pathname;
 
-        // Loop through each menu item
-        $('#main-nav a').each(function () {
-            var href = $(this).attr('href'); // Get the href of the link
-    
-            // Check if the href matches the current URL
-            if (currentUrl.includes(href)) {
-                // Remove the 'current-menu-item' from any other menu items
-                $('#main-nav li').removeClass('current-menu-item');
-                
-                // Add the 'current-menu-item' class to the matching menu item
-                $(this).closest('li').addClass('current-menu-item');
-            }
-        });
+    // Loop through each menu item
+    $('#main-nav a').each(function () {
+        var href = $(this).attr('href'); // Get the href of the link
+
+        // Check if the href matches the current URL
+        if (currentUrl.includes(href)) {
+            // Remove the 'current-menu-item' from any other menu items
+            $('#main-nav li').removeClass('current-menu-item');
+
+            // Add the 'current-menu-item' class to the matching menu item
+            $(this).closest('li').addClass('current-menu-item');
+        }
+    });
     if (currentUrl.includes('menu_functional.php')) {
         // Initiating the AJAX call to fetch the menu data
         $.ajax({
@@ -26,7 +26,7 @@ $(document).ready(function () {
             data: {
                 action: 'fetch_menu', // Action name to fetch the menu
             },
-            
+
             success: function (data) {
                 console.log("data");
                 console.log(data);
@@ -34,9 +34,9 @@ $(document).ready(function () {
                 let categoriesHtml = ''; // Variable to store all categories' HTML under one section
 
                 // Iterate through each category
-                data.forEach(function (category,index) {
+                data.forEach(function (category, index) {
                     let itemsHtml = ''; // Variable to store items HTML for each category
-                    
+
                     // Iterate through each item in the category
                     category.items.forEach(function (item) {
                         // Build HTML for each item
@@ -97,7 +97,7 @@ $(document).ready(function () {
             },
             error: function (error) {
                 console.log("Error");
-                
+
                 // Handle AJAX error gracefully
                 console.error('Error fetching menu:', error);
                 $('#menu-container').html('<p>Error loading menu. Please try again later.</p>'); // Display error message to the user
@@ -106,7 +106,6 @@ $(document).ready(function () {
     }
 
     if (currentUrl.includes('index.php')) {
-
 
         // $.ajax({
         //     url: 'actions/actions.php',
@@ -117,15 +116,15 @@ $(document).ready(function () {
         //     },
         //     success: function (response) {
         //         console.log("Menu Data:", response);
-        
+
         //         if (response.status === 'success') {
         //             let categories = response.data;
         //             let categoriesHtml = '';
         //             let itemsHtml = '';
-        
+
         //             categories.forEach(function (category) {
         //                 let categoryId = category.category_uuid; // Unique ID for linking items
-        
+
         //                 // Render category row
         //                 categoriesHtml += `
         //                     <div class="menu-category" id="category-${categoryId}">
@@ -137,11 +136,11 @@ $(document).ready(function () {
         //                             </div>
         //                         </div>
         //                     </div>`;
-        
+
         //                 // Render items for this category
         //                 let categoryItems = category.items;
         //                 let itemsSection = `<div class="row items-container">`;
-        
+
         //                 categoryItems.forEach(function (item, index) {
         //                     itemsSection += `
         //                         <div class="col-md-4 col-sm-6 item-box" data-category="${categoryId}">
@@ -150,11 +149,11 @@ $(document).ready(function () {
         //                             <span class="item-price">$${item.item_price}</span>
         //                         </div>`;
         //                 });
-        
+
         //                 itemsSection += `</div>`;
         //                 itemsHtml += itemsSection;
         //             });
-        
+
         //             // Append categories and items to the container
         //             $('#menu-container').html(categoriesHtml + itemsHtml);
         //         } else {
@@ -166,22 +165,22 @@ $(document).ready(function () {
         //         $('#menu-container').html('<p class="error">Failed to load menu. Try again later.</p>');
         //     }
         // });
-        
-     
-        
+
+
+
         $.ajax({
-            url: 'actions/actions.php', 
-            type: 'POST', 
-            dataType: 'json', 
+            url: 'actions/actions.php',
+            type: 'POST',
+            dataType: 'json',
             data: {
                 action: 'fetch_services',
             },
             success: function (data) {
                 console.log("Services Data:", data);
-        
+
                 let servicesHtml = '';
                 let navHtml = '';
-        
+
                 data.forEach(function (service, index) {
                     servicesHtml += `
                         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -194,7 +193,7 @@ $(document).ready(function () {
                                 <div class="description">${service.service_description}</div>
                             </div>
                         </div>`;
-        
+
                     navHtml += `
                         <li class="swin-transition">
                             <a href="javascript:void(0)" class="testimonial-nav-item">
@@ -202,15 +201,15 @@ $(document).ready(function () {
                             </a>
                         </li>`;
                 });
-        
+
                 $('#services-row').html(servicesHtml);
                 // $('#testimonials-container .nav-slider .slides').html(navHtml);
-        
+
                 // Initialize slick only if the elements are present
                 // if ($('#testimonials-container .main-slider .slides').length > 0) {
                 //     var $main_slider = $('#testimonials-container .main-slider .slides');
                 //     var $nav_slider = $('#testimonials-container .nav-slider .slides');
-        
+
                 //     $main_slider.slick({
                 //         animation: 'slide',
                 //         slidesToShow: 1,
@@ -218,7 +217,7 @@ $(document).ready(function () {
                 //         arrows: false,
                 //         asNavFor: $nav_slider
                 //     });
-        
+
                 //     $nav_slider.slick({
                 //         asNavFor: $main_slider,
                 //         centerMode: true,
@@ -237,20 +236,20 @@ $(document).ready(function () {
                 $('#services-row').html('<p>Error loading services. Please try again later.</p>');
             }
         });
-        
+
 
         $.ajax({
             type: "POST",
             url: 'actions/actions.php',
             data: { action: 'fetch_team_members' },
             dataType: "json",
-            success: function(response) {
+            success: function (response) {
                 if (response.error) {
                     console.log('Error: ' + response.error);
                 } else {
                     console.log(response);  // Handle the team members data here
                     // Append all team members HTML to the section
-                    response.forEach(function(member) {
+                    response.forEach(function (member) {
                         let teamHTML = `
                             <div class="team-item swin-transition wow fadeInLeft">
                                 <div class="team-img-wrap">
@@ -270,12 +269,12 @@ $(document).ready(function () {
                         // Append the team member to the team section
                         $('.swin-sc-team-slider').append(teamHTML);
                     });
-        
 
-                    
+
+
                     // Initialize the slick slider after appending all team members
-                   
-             
+
+
                     $(".swin-sc-team-slider").slick({
                         dots: false,
                         arrows: true,
@@ -301,31 +300,31 @@ $(document).ready(function () {
                         ]
                     });
 
-                 
-                  
+
+
 
                 }
             },
-            error: function(xhr, status, error) {
+            error: function (xhr, status, error) {
                 console.log("AJAX Error: " + error);
             }
         });
-        
+
         //AJAX call to fetch daily specials
         $.ajax({
             type: "POST",
             url: 'actions/actions.php',
             data: { action: 'fetch_daily_specials' },
             dataType: "json",
-            success: function(response) {
+            success: function (response) {
                 if (response.error) {
                     console.log('Error: ' + response.error);
                 } else {
                     var specials = response.data; // Access the 'data' property
                     var specialsHtml = '';
-                    
+
                     // Loop through the specials and create HTML with matching structure
-                    $.each(specials, function(index, special) {
+                    $.each(specials, function (index, special) {
                         specialsHtml += '<div class="col-md-12">';
                         specialsHtml += '    <div class="item product-01 d-flex">';
                         specialsHtml += '        <div class="item-left"><img src="' + special.image_url + '" alt="" class="img img-fluid">';
@@ -340,16 +339,16 @@ $(document).ready(function () {
                         specialsHtml += '    </div>';
                         specialsHtml += '</div>';
                     });
-        
+
                     // Append the generated HTML to the container
                     $('#specials-container').html(specialsHtml);
-        
+
                     // Initialize Slick Carousel
                     $('.products-01.style-04 .nav-slider').each(function () {
-                    
+
                         var $nav_slider = $(this);
                         var item = $nav_slider.data('item') || 3; // Default to 3 if not set
-        
+
                         $nav_slider.slick({
                             fade: false,
                             dots: false,
@@ -370,44 +369,44 @@ $(document).ready(function () {
                                 },
                             ]
                         });
-        
+
                         // Bind beforeChange event after Slick initialization
                         $nav_slider.on('beforeChange', function (event, slick, currentSlideIndex, nextSlideIndex) {
-                         
+
                             var currentSlide = ".nav-slider div[data-slick-index='" + currentSlideIndex + "']";
                             var nextSlide = ".nav-slider div[data-slick-index='" + nextSlideIndex + "']";
                             $(this).find(currentSlide).removeClass('animated fadeInUpShort');
                             $(this).find(nextSlide).addClass('animated fadeInUpShort');
                         });
                     });
-                } 
+                }
             },
-            error: function() {
+            error: function () {
                 $('#specials-container').html('<p>Error fetching data. Please try again later.</p>');
             }
         });
-        
-        
+
+
         $.ajax({
             url: 'actions/actions.php',
             type: 'POST',
             dataType: 'json',
             data: { action: 'fetch_featured_blog' }, // Fetch featured blogs
-        
+
             success: function (response) {
                 console.log("Fetched featured blogs:", response);
-        
+
                 let featuredBlogsHtml = '';
-        
+
                 response.data.forEach(function (blog, index) {
                     // Extract date parts
                     let dateObj = new Date(blog.created_at);
                     let day = dateObj.getDate();
                     let month = dateObj.toLocaleString('default', { month: 'short' });
-        
+
                     // Set animation delay dynamically
-                    let delay = index * 0.3; 
-        
+                    let delay = index * 0.3;
+
                     featuredBlogsHtml += `
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div data-wow-delay="${delay}s" class="blog-item swin-transition item wow fadeInUpShort">
@@ -430,18 +429,18 @@ $(document).ready(function () {
                             </div>
                         </div>`;
                 });
-        
+
                 // Inject into the featured blog container
                 $('#featured-blog-container').html(featuredBlogsHtml);
             },
-        
+
             error: function (error) {
                 console.error('Error fetching featured blogs:', error);
                 $('#featured-blog-container').html('<p>Could not load featured blogs. Please try again later.</p>');
             }
         });
-        
-      
+
+
         // $.ajax({
         //     type: "POST",
         //     url: 'actions/actions.php',
@@ -453,7 +452,7 @@ $(document).ready(function () {
         //         } else {
         //             var specials = response.data; // Access the 'data' property
         //             var specialsHtml = '';
-        
+
         //             // Loop through the specials and create HTML with matching structure
         //             $.each(specials, function(index, special) {
         //                 specialsHtml += '<div class="col-md-12">';
@@ -470,7 +469,7 @@ $(document).ready(function () {
         //                 specialsHtml += '    </div>';
         //                 specialsHtml += '</div>';
         //             });
-        
+
         //             // Append the generated HTML to the container
         //             $('#specials-container').html(specialsHtml);
         //             $('#specials-container').trigger('reflow'); // Manually trigger a reflow
@@ -479,7 +478,7 @@ $(document).ready(function () {
         //             setTimeout(function() {
         //                 // Ensure we are targeting the correct element
         //                 var $nav_slider = $('#specials-container'); // Remove '.nav-slider' if it's not part of the HTML
-        
+
         //                 if ($nav_slider.length > 0) {
         //                     $nav_slider.slick({
         //                         fade: false,
@@ -509,149 +508,150 @@ $(document).ready(function () {
         //         $('#specials-container').html('<p>Error fetching data. Please try again later.</p>');
         //     }
         // });
-        
+
     }
 
     $('#btn_book_table').on('click', function (e) {
-            e.preventDefault();
+        e.preventDefault();
 
 
-            // Collect form data
-            const formData = {
+        // Collect form data
+        const formData = {
+            username: $('input[id="fullname"]').val(),
+            email: $('input[placeholder="Email"]').val(),
+            phone: $('input[placeholder="Phone"]').val(),
+            people: $('select[placeholder="People"]').val(),
+            date: $('input[placeholder="Date"]').val(),
+            time: $('select[placeholder="Time"]').val()
+        };
+
+
+        // Send AJAX request
+        $.ajax({
+            url: 'actions/actions.php',
+            type: 'POST',
+            data:
+            {
+                action: 'make_reservation',
                 username: $('input[id="fullname"]').val(),
                 email: $('input[placeholder="Email"]').val(),
                 phone: $('input[placeholder="Phone"]').val(),
                 people: $('select[placeholder="People"]').val(),
                 date: $('input[placeholder="Date"]').val(),
-                time: $('select[placeholder="Time"]').val()
-            };
-
-
-            // Send AJAX request
-            $.ajax({
-                url: 'actions/actions.php',
-                type: 'POST',
-                data: 
-                { action: 'make_reservation' ,
-                    username: $('input[id="fullname"]').val(),
-                    email: $('input[placeholder="Email"]').val(),
-                    phone: $('input[placeholder="Phone"]').val(),
-                    people: $('select[placeholder="People"]').val(),
-                    date: $('input[placeholder="Date"]').val(),
-                    time: $('select[placeholder="Time"]').val(),
-    recaptcha: grecaptcha.getResponse() // Include reCAPTCHA response
-                },
-                dataType: 'json',
-                success: function (response) {
-                    if (response.status === 'success') {
+                time: $('select[placeholder="Time"]').val(),
+                recaptcha: grecaptcha.getResponse() // Include reCAPTCHA response
+            },
+            dataType: 'json',
+            success: function (response) {
+                if (response.status === 'success') {
                     $('input[id="fullname"]').val(""),
-                $('input[placeholder="Email"]').val(""),
-                    $('input[placeholder="Phone"]').val(""),
-                    $('select[placeholder="People"]').val(""),
-                $('input[placeholder="Date"]').val(""),
-                    $('select[placeholder="Time"]').val(""),
-                    $('textarea').val("")
+                        $('input[placeholder="Email"]').val(""),
+                        $('input[placeholder="Phone"]').val(""),
+                        $('select[placeholder="People"]').val(""),
+                        $('input[placeholder="Date"]').val(""),
+                        $('select[placeholder="Time"]').val(""),
+                        $('textarea').val("")
 
-                        alert(response.message);
-                    } else {
-                        alert('Error: ' + response.message);
-                    }
-                },
-                error: function () {
-                    alert('An error occurred while making the reservation.');
+                    alert(response.message);
+                } else {
+                    alert('Error: ' + response.message);
                 }
-            });
+            },
+            error: function () {
+                alert('An error occurred while making the reservation.');
+            }
+        });
     });
 
     $('#btn_subscribe').on('click', function (e) {
-            e.preventDefault();
-        
-            const email = $('#subscribe_email').val().trim();
-        
-            if (email === '') {
-                alert('Please enter your email.');
-                return;
-            }
-        
-            $.ajax({
-                url: 'actions/actions.php',
-                type: 'POST',
-                data: { action: 'subscribe', email: email },
-                dataType: 'json',
-                success: function (response) {
-                    if (response.status === 'success') {
-                        $('#subscribe_email').val('');
-                        alert(response.message);
-                    } else {
-                        alert('Error: ' + response.message);
-                    }
-                },
-                error: function () {
-                    alert('An error occurred while subscribing.');
+        e.preventDefault();
+
+        const email = $('#subscribe_email').val().trim();
+
+        if (email === '') {
+            alert('Please enter your email.');
+            return;
+        }
+
+        $.ajax({
+            url: 'actions/actions.php',
+            type: 'POST',
+            data: { action: 'subscribe', email: email },
+            dataType: 'json',
+            success: function (response) {
+                if (response.status === 'success') {
+                    $('#subscribe_email').val('');
+                    alert(response.message);
+                } else {
+                    alert('Error: ' + response.message);
                 }
-            });
+            },
+            error: function () {
+                alert('An error occurred while subscribing.');
+            }
+        });
     });
 
     $('#btn_contact_submit').on('click', function (e) {
-            e.preventDefault();
-        
-            // Collect form data
-            const contactData = {
-                action: 'send_message',
-                username: $('input[id="contact_fullname"]').val().trim(),
-                email: $('input[placeholder="Email"]').val().trim(),
-                phone: $('input[placeholder="Phone"]').val().trim(),
-                message: $('textarea[placeholder="Message"]').val().trim(),
-    recaptcha: grecaptcha.getResponse() // Include reCAPTCHA response
-            };
-        
-            // Validate fields
-            if (!contactData.username || !contactData.email || !contactData.message) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-        
-            // Send AJAX request
-            $.ajax({
-                url: 'actions/actions.php',
-                type: 'POST',
-                data: contactData,
-                dataType: 'json',
-                success: function (response) {
-                    if (response.status === 'success') {
-                        // Clear input fields
-                        $('input[id="contact_fullname"]').val('');
-                        $('input[placeholder="Email"]').val('');
-                        $('input[placeholder="Phone"]').val('');
-                        $('textarea[placeholder="Message"]').val('');
-                        alert(response.message);
-                    } else {
-                        alert('Error: ' + response.message);
-                    }
-                },
-                error: function () {
-                    alert('An error occurred while sending your message.');
+        e.preventDefault();
+
+        // Collect form data
+        const contactData = {
+            action: 'send_message',
+            username: $('input[id="contact_fullname"]').val().trim(),
+            email: $('input[placeholder="Email"]').val().trim(),
+            phone: $('input[placeholder="Phone"]').val().trim(),
+            message: $('textarea[placeholder="Message"]').val().trim(),
+            recaptcha: grecaptcha.getResponse() // Include reCAPTCHA response
+        };
+
+        // Validate fields
+        if (!contactData.username || !contactData.email || !contactData.message) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
+        // Send AJAX request
+        $.ajax({
+            url: 'actions/actions.php',
+            type: 'POST',
+            data: contactData,
+            dataType: 'json',
+            success: function (response) {
+                if (response.status === 'success') {
+                    // Clear input fields
+                    $('input[id="contact_fullname"]').val('');
+                    $('input[placeholder="Email"]').val('');
+                    $('input[placeholder="Phone"]').val('');
+                    $('textarea[placeholder="Message"]').val('');
+                    alert(response.message);
+                } else {
+                    alert('Error: ' + response.message);
                 }
-            });
+            },
+            error: function () {
+                alert('An error occurred while sending your message.');
+            }
+        });
     });
-    if (currentUrl.includes('blogs.php')) {   
+    if (currentUrl.includes('blogs.php')) {
         $.ajax({
             url: 'actions/actions.php',
             type: 'POST',
             dataType: 'json',
             data: { action: 'fetch_blogs' }, // Fetch blog posts
-        
+
             success: function (response) {
                 console.log("Fetched blogs:", response);
-        
+
                 let blogsHtml = '';
-        
+
                 response.data.forEach(function (blog) {
                     // Extract date parts
                     let dateObj = new Date(blog.created_at);
                     let day = dateObj.getDate();
                     let month = dateObj.toLocaleString('default', { month: 'short' });
-        
+
                     blogsHtml += `
                         <div class="col-md-6">
                             <div class="swin-sc-blog-slider style-02">
@@ -675,17 +675,17 @@ $(document).ready(function () {
                             </div>
                         </div>`;
                 });
-        
+
                 // Inject into the blog container
                 $('#blog-container').html(blogsHtml);
             },
-        
+
             error: function (error) {
                 console.error('Error fetching blogs:', error);
                 $('#blog-container').html('<p>Could not load blogs. Please try again later.</p>');
             }
         });
-        
+
     }
 
     if (currentUrl.includes('index.php') || currentUrl.includes('about.php')) {
@@ -698,10 +698,10 @@ $(document).ready(function () {
             },
             success: function (data) {
                 console.log("Testimonials Data:", data);
-                
+
                 let testimonialsHtml = ''; // Variable to store all testimonials HTML
                 let navHtml = ''; // Variable to store the navigation images HTML
-        
+
                 // Iterate through each testimonial
                 data.forEach(function (testimonial, index) {
                     // Build HTML for each testimonial
@@ -716,7 +716,7 @@ $(document).ready(function () {
                                 <span class="position">${testimonial.testimonial_position}</span>
                             </div>
                         </div>`;
-        
+
                     // Build HTML for the navigation images
                     navHtml += `
                         <li class="swin-transition">
@@ -725,16 +725,16 @@ $(document).ready(function () {
                             </a>
                         </li>`;
                 });
-        
+
                 // Inject the generated testimonials HTML into the main slider
                 $('#testimonials-container .main-slider .slides').html(testimonialsHtml);
-        
+
                 // Inject the generated navigation images HTML
                 $('#testimonials-container .nav-slider .slides').html(navHtml);
                 $('.swin-sc-testimonial.style-1').each(function () {
                     var $main_slider = $(this).find('.main-slider .slides');
                     var $nav_slider = $(this).find('.nav-slider .slides');
-        
+
                     $main_slider.slick({
                         animation: 'slide',
                         slidesToShow: 1,
@@ -742,7 +742,7 @@ $(document).ready(function () {
                         arrows: false,
                         asNavFor: $nav_slider
                     });
-        
+
                     $nav_slider.slick({
                         asNavFor: $main_slider,
                         centerMode: true,
@@ -755,7 +755,7 @@ $(document).ready(function () {
                         focusOnSelect: true
                     });
                 });
-        
+
             },
             error: function (error) {
                 console.error('Error fetching testimonials:', error);
@@ -766,31 +766,31 @@ $(document).ready(function () {
 
 
 
-    if(currentUrl.includes('reservation.php')){
+    if (currentUrl.includes('reservation.php')) {
         $.ajax({
             url: 'actions/actions.php',
             type: 'POST',
             dataType: 'json',
             data: { action: 'fetch_event_blog' }, // Fetch featured blogs
-        
+
             success: function (response) {
                 console.log("Fetched event blogs:", response);
-        
+
                 let eventBlogsHtml = '';
-        
+
                 response.data.forEach(function (blog, index) {
                     // Extract date parts
                     let dateObj = new Date(blog.created_at);
                     let day = dateObj.getDate();
                     let month = dateObj.toLocaleString('default', { month: 'short' });
-        
+
                     // Set animation delay dynamically
-                    let delay = index * 0.3; 
-        
+                    let delay = index * 0.3;
+
                     // eventBlogsHtml += `
                     //     <div class="col-md-6 col-sm-12 col-xs-12">
                     //         <div data-wow-delay="${delay}s" class="blog-item swin-transition item wow fadeInUpShort">
-                                
+
                     //             <div class="blog-featured-img">
                     //             <a href="blog-single.php?id=${blog.id}" >
                     //                 <img src="${blog.image_url}" alt="${blog.title}" class="img img-fluid" >
@@ -809,7 +809,7 @@ $(document).ready(function () {
                     //         </div>
                     //     </div>`;
 
-                        eventBlogsHtml += `
+                    eventBlogsHtml += `
                         <div class="col-md-6 col-sm-12 col-xs-12">
                       <div class="swin-sc swin-sc-event swin-transition wow fadeInLeft">
                         <div class="swin-sc-event-inner">
@@ -840,11 +840,11 @@ $(document).ready(function () {
                         `;
 
                 });
-        
+
                 // Inject into the featured blog container
                 $('#event-blog-container').html(eventBlogsHtml);
             },
-        
+
             error: function (error) {
                 console.error('Error fetching featured blogs:', error);
                 $('#event-blog-container').html('<p>Could not load event blogs. Please try again later.</p>');
@@ -853,18 +853,18 @@ $(document).ready(function () {
 
 
         $.ajax({
-            url: 'actions/actions.php', 
-            type: 'POST', 
-            dataType: 'json', 
+            url: 'actions/actions.php',
+            type: 'POST',
+            dataType: 'json',
             data: {
                 action: 'fetch_services',
             },
             success: function (data) {
                 console.log("Services Data:", data);
-        
+
                 let servicesHtml = '';
                 let navHtml = '';
-        
+
                 data.forEach(function (service, index) {
                     servicesHtml += `
                         <div class="col-md-4 col-sm-6 col-xs-12">
@@ -877,7 +877,7 @@ $(document).ready(function () {
                                 <div class="description">${service.service_description}</div>
                             </div>
                         </div>`;
-        
+
                     navHtml += `
                         <li class="swin-transition">
                             <a href="javascript:void(0)" class="testimonial-nav-item">
@@ -885,9 +885,9 @@ $(document).ready(function () {
                             </a>
                         </li>`;
                 });
-        
+
                 $('#services-row').html(servicesHtml);
-           
+
             },
             error: function (error) {
                 console.error('Error fetching services:', error);

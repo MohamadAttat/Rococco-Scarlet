@@ -3,7 +3,9 @@
 <?php
 
 include 'header.php';
-
+require_once('services/HPService.php');
+$homeService = new HPService();
+$slides = $homeService->getSlides();
 ?>
 <script>
   // Change the title dynamically
@@ -135,22 +137,29 @@ include 'header.php';
         </header> -->
       <div class="page-container">
         <div class="top-header top-bg-parallax">
-          <div data-parallax="scroll" data-image-src="rococo_images/img23.png" class="slides parallax-window">
-            <div class="slide-content slide-layout-02">
-              <div class="container">
-                <div class="slide-content-inner"><img src="assets/images/slider/slider2-icon.png" data-ani-in="fadeInUp"
-                    data-ani-out="fadeOutDown" data-ani-delay="500" alt="fooday"
-                    class="slide-icon img img-fluid img-fluid d-block animated">
-                  <h3 data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1000"
-                    class="slide-title animated">ROCOCO </h3>
-
-                  <p data-ani-in="fadeInUp" data-ani-out="fadeOutDown" data-ani-delay="1500"
-                    class="slide-sub-title animated"><span class="line-before"></span><span
-                      class="line-after"></span><span class="text"><span>Indulge </span><span>Elevate
-                      </span><span>Celebrate</span></span></p>
-                </div>
-              </div>
-            </div>
+          <div id="slides-row">
+            <?php
+            foreach ($slides as $key => $slide) {
+              $slideImg = isset($slide['content_img']) ? "<img src='assets/images/slider/{$slide['content_img']}' data-ani-in='fadeInUp' data-ani-out='fadeOutDown'
+                                    data-ani-delay='500' alt='fooday' class='slide-icon img img-fluid img-fluid d-block animated' />" : '';
+              $slideTitle = isset($slide['content_title']) ? "<h3 data-ani-in='fadeInUp' data-ani-out='fadeOutDown' data-ani-delay='1000'
+                                    class='slide-title animated'>{$slide['content_title']}</h3>" : '';
+              $slideText = isset($slide['content_text']) ? "<p data-ani-in='fadeInUp' data-ani-out='fadeOutDown' data-ani-delay='1500'
+                                    class='slide-sub-title animated'><span class='line-before'></span><span
+                                    class='line-after'></span><span class='text'>{$slide['content_text']}</span></p>" : '123';
+              echo "<div data-parallax='scroll' data-image-src='assets/images/slider/{$slide['bg_image']}' class='slides parallax-window'>
+                        <div class='slide-content slide-layout-02'>
+                            <div class='container'>
+                                <div class='slide-content-inner'>
+                                $slideImg
+                                $slideTitle
+                                $slideText
+                                </div>
+                            </div>
+                        </div>
+                    </div>";
+            }
+            ?>
           </div>
         </div>
         <div class="page-content-wrapper">
@@ -910,12 +919,23 @@ include 'header.php';
                 </div>
               </div>
             </div>
-            <div class="video-wrapper equal-height deco-abs">
-              <div class="swin-sc swin-sc-video">
-                <div class="play-wrap"><a href="assets/video/rococo.mp4" class="play-btn swipebox"><i
-                      class="play-icon fa fa-play"></i></a></div>
+              <!-- <div style="display: none;">
+                <div id="video-content" >
+                  <video controls width="100%" height="auto">
+                    <source src="assets/video/rococo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>-->
+              <div class="video-wrapper equal-height deco-abs">
+                <div class="swin-sc swin-sc-video">
+                  <div class="play-wrap">
+                      <a href="assets/video/rococo.mp4" data-fancybox data-ratio="9/16" class="play-btn">
+                        <i class="play-icon fa fa-play"></i>
+                      </a>
+                  </div>
+                </div>
               </div>
-            </div>
           </section>
 
           <section class="service-section-02 padding-top-100 padding-bottom-100">
@@ -1036,17 +1056,17 @@ include 'header.php';
                   $title = pathinfo($fileName, PATHINFO_FILENAME); // Extract file name without extension
                   $colSize = ($index % 3 == 0) ? 'col-sm-3 grid-item-h2' : (($index % 2 == 0) ? 'col-sm-4 grid-item-h1' : 'col-sm-2 grid-item-h1'); // Vary column size
                   ?>
-                  <div class="grid-item <?= $colSize ?>">
-                    <div class="grid-wrap-item">
-                      <a class="gallery-title title"><?= ucfirst(str_replace('-', ' ', $title)) ?></a>
-                      <a href="<?= $file ?>" data-lightbox="image" target="_blank" class="view-lightbox swipebox"><i
-                          class="fa fa-search-plus"></i></a>
-                      <a href="menu_functional.php" target="_blank" class="view-more"><i class="fa fa-link"></i></a>
-                      <div class="img-wrap">
-                        <img src="<?= $file ?>" alt="<?= $title ?>" class="img img-fluid">
-                      </div>
-                    </div>
-                  </div>
+                                                      <div class="grid-item <?= $colSize ?>">
+                                                        <div class="grid-wrap-item">
+                                                          <a class="gallery-title title"><?= ucfirst(str_replace('-', ' ', $title)) ?></a>
+                                                          <a href="<?= $file ?>" data-lightbox="image" target="_blank" class="view-lightbox swipebox"><i
+                                                              class="fa fa-search-plus"></i></a>
+                                                          <a href="menu_functional.php" target="_blank" class="view-more"><i class="fa fa-link"></i></a>
+                                                          <div class="img-wrap">
+                                                            <img src="<?= $file ?>" alt="<?= $title ?>" class="img img-fluid">
+                                                          </div>
+                                                        </div>
+                                                      </div>
                 <?php } ?>
               </div>
             </div>
@@ -1468,6 +1488,5 @@ include 'header.php';
   ?>
 
 </body>
-<script src="actions/ajax_for_menu.js"></script>
 
 </html>
