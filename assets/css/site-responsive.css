@@ -16,6 +16,15 @@
 
   .header-main .header-logo {
     margin: unset;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .header-main .logo {
+    left: unset;
+    transform: none;
+    top: unset;
   }
 
   .header-main .main-nav-wrapper {
@@ -28,7 +37,9 @@
     right: 100%;
   }
 
-  .header-transparent #main-nav>li>a {
+  .header-transparent #main-nav>li>a,
+  header.header-fixed .header-main #main-nav>li>a {
+
     color: #ffffff;
   }
 
@@ -58,6 +69,9 @@
 /* styles for small phones */
 @media (max-width: 576px) {
 
+  .hide-on-mobile {
+    display: none !important;
+  }
 
   .slick-arrow {
     top: 48%;
@@ -93,5 +107,35 @@
 
   .footer-bottom .topbar-left {
     display: block !important;
+  }
+
+  .swin-sc-contact-form .form-group textarea {
+    margin-bottom: 30px;
+  }
+
+  .g-recaptcha>div,
+  .g-recaptcha iframe,
+  .g-recaptcha iframe * {
+    width: 100% !important;
+  }
+
+  .footer-main .clearfix,
+  .footer-main .info-content,
+  .footer-main .address-info,
+  .footer-main .phone-info,
+  .footer-main .email-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-main .info-icon {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .about-contact-info .info-content {
+    margin-bottom: 0;
   }
 }

@@ -13,8 +13,15 @@
 }
 
 .title,
-.page-title .title {
-  font-family: Optima;
+.title *,
+.page-title .title,
+.page-title .title *,
+.timeline-heading,
+.timeline-heading *,
+.swin-sc-title .title,
+.subscribe-wrapper .title,
+.res-title {
+  font-family: Optima !important;
 }
 
 .close-offcanvas {
@@ -25,8 +32,19 @@
   padding: 0 8px;
 }
 
+.top-header .slide-content .slide-icon {
+  max-width: 400px;
+}
+
 #section-booking-deposit ul {
   font-size: 16px;
+}
+
+.top-bg-parallax .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
 }
 
 .footer-bottom {
@@ -38,4 +56,8 @@
 
 .footer-bottom * {
   color: white !important;
+}
+
+.footer-bottom a {
+  text-decoration: none;
 }

@@ -3,7 +3,8 @@
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSMZKGLL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSMZKGLL" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
@@ -39,7 +40,7 @@
               <!-- <li class="list-inline-item"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li> -->
               <!-- <li class="list-inline-item"><a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a></li> -->
               <!-- <li class="list-inline-item"><a href="javascript:void(0)"><i class="fa fa-google-plus"></i></a></li> -->
-                <li class="list-inline-item"> <a href="https://www.instagram.com/rococo.ng/" target="_blank">
+              <li class="list-inline-item"> <a href="https://www.instagram.com/rococo.ng/" target="_blank">
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
@@ -91,10 +92,10 @@
       </div>
       <div class="header-logo">
         <a href="index.php" class="logo logo-static">
-          <img src="assets/images/custom/logo-new.png" alt="ROCOCO" class="logo-img" style="max-width:120px">
+          <img src="assets/images/custom/logo-new.png" alt="ROCOCO" class="logo-img" style="max-width:160px">
         </a>
         <a href="index.php" class="logo logo-fixed">
-          <img src="assets/images/custom/logo_complete_fix.png" alt="ROCOCO" class="logo-img" style="max-width:80px">
+          <img src="assets/images/custom/logo-new-dark.png" alt="ROCOCO" class="logo-img" style="max-width:100px">
 
         </a>
       </div>
@@ -124,7 +125,7 @@
               <a href="menu_functional.php" class="dropdown-item">Menu
               </a>
               <!-- <a href="menu-grid-1.html" class="nav-link">Menu</a> -->
-            <!-- <ul class="dropdown-menu"> -->
+              <!-- <ul class="dropdown-menu"> -->
               <!-- <li><a href="menu-classic.html" class="dropdown-item">Menu Classic</a></li>
                                                     <li><a href="menu-grid-1.html" class="dropdown-item">Menu Grid 01</a></li>
                                                     <li><a href="menu-grid-2.html" class="dropdown-item">Menu Grid 02</a></li>
@@ -157,4 +158,3 @@
     </div>
   </div>
 </header>
-

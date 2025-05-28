@@ -11,7 +11,8 @@
               <div class="des">Get more news and delicious dishes every day from us</div>
             </div>
             <form class="widget-newsletter">
-              <input type="email" id="subscribe_email" placeholder="Email" class="form-control" style=" border: 1px solid #DEC66A;">
+              <input type="email" id="subscribe_email" placeholder="Email" class="form-control"
+                style=" border: 1px solid #DEC66A;">
               <button type="button" id="btn_subscribe" class="submit subscribe_btn" style="height: 40px;
                    background-color:rgb(255, 255, 255);
                                                       border: 1px solid #DEC66A;
@@ -35,7 +36,8 @@
             <div class="ft-area1">
               <div class="swin-wget swin-wget-about">
                 <div class="clearfix">
-                  <a class="wget-logo"><img src="assets/images/custom/logo_complete_footer.png" alt="" class="img img-fluid" style="max-width:150px"></a>
+                  <a class="wget-logo"><img src="assets/images/custom/logo_complete_footer.png" alt=""
+                      class="img img-fluid" style="max-width:200px"></a>
                 </div>
 
                 <div class="about-contact-info clearfix">
@@ -53,14 +55,16 @@
                   <div class="phone-info">
                     <div class="info-content">
                       <p>
-                        <a href="assets/docs/Rococo-Wine-Menu.pdf" target="_blank" class="nav-link">Download Wine Menu</a>
+                        <a href="assets/docs/Rococo-Wine-Menu.pdf" target="_blank" class="nav-link">Download Wine
+                          Menu</a>
                       </p>
                       <p>
-                        <a href="assets/docs/Rococo-Cocktail-Menu.pdf" target="_blank" class="nav-link">Download Cocktail Menu</a>
+                        <a href="assets/docs/Rococo-Cocktail-Menu.pdf" target="_blank" class="nav-link">Download
+                          Cocktail Menu</a>
                       </p>
                     </div>
                   </div>
-                  <div class="email-info">
+                  <div class="email-info hide-on-mobile">
                     <div class="info-content">
                       <p>&nbsp;</p>
                       <p>&nbsp;</p>
@@ -70,12 +74,14 @@
 
 
                 <div class="wget-about-content" style="display:none;">
-                  <p>Inspired by the grandeur of the 18th century, Rococo is a place where history and modernity live side by side. Every corner tells a story-from sculpted moldings, pastel palettes, and crystal chandeliers to hidden layers of the world's most advanced technology.</p>
+                  <p>Inspired by the grandeur of the 18th century, Rococo is a place where history and modernity live
+                    side by side. Every corner tells a story-from sculpted moldings, pastel palettes, and crystal
+                    chandeliers to hidden layers of the world's most advanced technology.</p>
                 </div>
 
 
                 <div class="about-contact-info clearfix">
-                  <br>
+                  <br class="hide-on-mobile" />
                   <div class="address-info">
                     <div class="info-icon">
                       <i class="fa fa-map-marker"></i>
