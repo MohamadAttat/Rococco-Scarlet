@@ -24,6 +24,10 @@
   font-family: Optima !important;
 }
 
+.swin-sc-title.style-4 .title {
+  font-size: 50px;
+}
+
 .close-offcanvas {
   cursor: pointer;
 }
