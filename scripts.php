@@ -33,6 +33,7 @@ const popoverList = [... popoverTriggerList].map(popoverTriggerEl => new bootstr
 <script src="assets/js/elements.js"></script>
 <script src="assets/js/widget.js"></script>
 <script src="actions/ajax.js"></script>
+<script src="actions/ajax_for_menu.js"></script>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 

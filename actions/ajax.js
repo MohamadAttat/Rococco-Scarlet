@@ -106,7 +106,6 @@ $(document).ready(function () {
     }
 
     if (currentUrl.includes('index.php')) {
-
         // $.ajax({
         //     url: 'actions/actions.php',
         //     type: 'POST',
@@ -167,7 +166,7 @@ $(document).ready(function () {
         // });
 
 
-
+        //fetch_services
         $.ajax({
             url: 'actions/actions.php',
             type: 'POST',
@@ -237,7 +236,7 @@ $(document).ready(function () {
             }
         });
 
-
+        //fetch_team_members
         $.ajax({
             type: "POST",
             url: 'actions/actions.php',
@@ -311,6 +310,7 @@ $(document).ready(function () {
         });
 
         //AJAX call to fetch daily specials
+        //fetch_daily_specials
         $.ajax({
             type: "POST",
             url: 'actions/actions.php',
@@ -386,7 +386,7 @@ $(document).ready(function () {
             }
         });
 
-
+        //fetch_featured_blog
         $.ajax({
             url: 'actions/actions.php',
             type: 'POST',

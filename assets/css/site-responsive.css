@@ -4,6 +4,10 @@
 /* styles for tablets and small desktops */
 @media (max-width: 1024px) {
 
+  header {
+    top: 20px;
+  }
+
   .header-top-row {
     display: none;
   }
@@ -73,6 +77,10 @@
     display: none !important;
   }
 
+  .top-header .slide-content .slide-icon {
+    max-width: 250px;
+  }
+
   .slick-arrow {
     top: 48%;
   }
@@ -91,6 +99,7 @@
   }
 
   .footer-bottom {
+    text-align: center;
     height: auto !important;
   }
 

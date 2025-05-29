@@ -1057,17 +1057,17 @@ $slides = $homeService->getSlides();
                   $title = pathinfo($fileName, PATHINFO_FILENAME); // Extract file name without extension
                   $colSize = ($index % 3 == 0) ? 'col-sm-3 grid-item-h2' : (($index % 2 == 0) ? 'col-sm-4 grid-item-h1' : 'col-sm-2 grid-item-h1'); // Vary column size
                   ?>
-                  <div class="grid-item <?= $colSize ?>">
-                    <div class="grid-wrap-item">
-                      <a class="gallery-title title"><?= ucfirst(str_replace('-', ' ', $title)) ?></a>
-                      <a href="<?= $file ?>" data-lightbox="image" target="_blank" class="view-lightbox swipebox"><i
-                          class="fa fa-search-plus"></i></a>
-                      <a href="menu_functional.php" target="_blank" class="view-more"><i class="fa fa-link"></i></a>
-                      <div class="img-wrap">
-                        <img src="<?= $file ?>" alt="<?= $title ?>" class="img img-fluid">
+                      <div class="grid-item <?= $colSize ?>">
+                        <div class="grid-wrap-item">
+                          <a class="gallery-title title"><?= ucfirst(str_replace('-', ' ', $title)) ?></a>
+                          <a href="<?= $file ?>" data-lightbox="image" target="_blank" class="view-lightbox swipebox"><i
+                              class="fa fa-search-plus"></i></a>
+                          <a href="menu_functional.php" target="_blank" class="view-more"><i class="fa fa-link"></i></a>
+                          <div class="img-wrap">
+                            <img src="<?= $file ?>" alt="<?= $title ?>" class="img img-fluid">
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
                 <?php } ?>
               </div>
             </div>
