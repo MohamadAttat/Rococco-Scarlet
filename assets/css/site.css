@@ -66,3 +66,8 @@
 .footer-bottom a {
   text-decoration: none;
 }
+
+.ft-fixed-area .reservation-wrap .res-date,
+.ft-fixed-area .reservation-wrap .res-time {
+  width: 50%;
+}

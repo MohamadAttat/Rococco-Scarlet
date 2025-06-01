@@ -23,7 +23,7 @@
           <div class="item">
             <div class="wg-contact">
               <i class="fa fa-phone"></i>
-              <span>+234 (0) 913 775 5555</span>
+              <span>+234 (9) 13 775 5555</span>
             </div>
           </div>
         </div>

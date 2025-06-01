@@ -1,3 +1,36 @@
+<?php
+$open_hours = [
+  [
+    "day" => "Monday",
+    "hours" => "2:00 PM-12:30 AM"
+  ],
+  [
+    "day" => "Tuesday",
+    "hours" => "2:00 PM-12:30 AM"
+  ],
+  [
+    "day" => "Wednesday",
+    "hours" => "2:00 PM-12:30 AM"
+  ],
+  [
+    "day" => "Thursday",
+    "hours" => "2:00 PM-12:30 AM"
+  ],
+  [
+    "day" => "Friday",
+    "hours" => "2:00 PM-5:00 AM"
+  ],
+  [
+    "day" => "Saturday",
+    "hours" => "2:00 PM-5:00 AM"
+  ],
+  [
+    "day" => "Sunday",
+    "hours" => "2:00 PM-1:30 AM"
+  ]
+]
+  ?>
+
 <footer>
 
   <div class="subscribe-section">
@@ -120,131 +153,25 @@
               <div class="reservation-wrap">
                 <h3 class="res-title">Open Hour</h3>
                 <div class="res-date-time">
-
-                  <div class="res-date-time-item">
-                    <div class="res-date">
-                      <div class="res-date-item">
-                        <div class="res-date-text">
-                          <p>Monday:</p>
+                  <?php
+                  foreach ($open_hours as $working_day): ?>
+                    <div class="res-date-time-item">
+                      <div class="res-date">
+                        <div class="res-date-item">
+                          <div class="res-date-text">
+                            <p><?php echo $working_day['day']; ?>:</p>
+                          </div>
+                          <div class="res-date-dot">................................</div>
                         </div>
-                        <div class="res-date-dot">.......................................</div>
                       </div>
-                    </div>
-                    <div class="res-time">
-                      <div class="res-time-item">
-                        <p>Closed</p>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-
-
-                  <div class="res-date-time-item">
-                    <div class="res-date">
-                      <div class="res-date-item">
-                        <div class="res-date-text">
-                          <p>Tuesday:</p>
+                      <div class="res-time">
+                        <div class="res-time-item">
+                          <p><?php echo $working_day['hours']; ?></p>
                         </div>
-                        <div class="res-date-dot">.......................................</div>
                       </div>
+                      <div class="clearfix"></div>
                     </div>
-                    <div class="res-time">
-                      <div class="res-time-item">
-                        <p>Closed</p>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-
-
-                  <div class="res-date-time-item">
-                    <div class="res-date">
-                      <div class="res-date-item">
-                        <div class="res-date-text">
-                          <p>Wednesday:</p>
-                        </div>
-                        <div class="res-date-dot">.......................................</div>
-                      </div>
-                    </div>
-                    <div class="res-time">
-                      <div class="res-time-item">
-                        <p>Closed</p>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-
-
-                  <div class="res-date-time-item">
-                    <div class="res-date">
-                      <div class="res-date-item">
-                        <div class="res-date-text">
-                          <p>Thursday:</p>
-                        </div>
-                        <div class="res-date-dot">.......................................</div>
-                      </div>
-                    </div>
-                    <div class="res-time">
-                      <div class="res-time-item">
-                        <p>14:00 - 24:00</p>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-
-
-                  <div class="res-date-time-item">
-                    <div class="res-date">
-                      <div class="res-date-item">
-                        <div class="res-date-text">
-                          <p>Friday:</p>
-                        </div>
-                        <div class="res-date-dot">.......................................</div>
-                      </div>
-                    </div>
-                    <div class="res-time">
-                      <div class="res-time-item">
-                        <p>14:00 - 5:00</p>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-
-
-                  <div class="res-date-time-item">
-                    <div class="res-date">
-                      <div class="res-date-item">
-                        <div class="res-date-text">
-                          <p>Saturday:</p>
-                        </div>
-                        <div class="res-date-dot">.......................................</div>
-                      </div>
-                    </div>
-                    <div class="res-time">
-                      <div class="res-time-item">
-                        <p>14:00 - 5:00</p>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-
-
-                  <div class="res-date-time-item">
-                    <div class="res-date">
-                      <div class="res-date-item">
-                        <div class="res-date-text">
-                          <p>Sunday:</p>
-                        </div>
-                        <div class="res-date-dot">.......................................</div>
-                      </div>
-                    </div>
-                    <div class="res-time">
-                      <div class="res-time-item">
-                        <p>14:00 - 24:00</p>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
+                  <?php endforeach; ?>
 
                 </div>
                 <h3 class="res-title">Reservation Numbers</h3>
