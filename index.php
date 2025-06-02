@@ -146,7 +146,7 @@ $slides = $homeService->getSlides();
                                     class='slide-title animated'>{$slide['content_title']}</h3>" : '';
               $slideText = isset($slide['content_text']) ? "<p data-ani-in='fadeInUp' data-ani-out='fadeOutDown' data-ani-delay='1500'
                                     class='slide-sub-title animated'><span class='line-before'></span><span
-                                    class='line-after'></span><span class='text'>{$slide['content_text']}</span></p>" : '123';
+                                    class='line-after'></span><span class='text'>{$slide['content_text']}</span></p>" : '';
               echo "<div data-parallax='scroll' data-image-src='assets/images/slider/{$slide['bg_image']}' class='slides parallax-window'>
                     <div class='overlay'></div>    
                     <div class='slide-content slide-layout-02'>
@@ -1052,23 +1052,46 @@ $slides = $homeService->getSlides();
                 $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif']; // Allowed image types
                 $files = glob($folderPath . "*.{jpg,jpeg,png,gif}", GLOB_BRACE); // Get all images
                 
+                $displayedCount = 0; // Counter for displayed items
+                
                 foreach ($files as $index => $file) {
+                  $extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+
+                  // Skip file if not in allowed extensions
+                  if (!in_array($extension, $allowedExtensions)) {
+                    continue;
+                  }
+
+                  // Stop after 6 images
+                  if ($displayedCount >= 6) {
+                    break;
+                  }
+
                   $fileName = basename($file);
                   $title = pathinfo($fileName, PATHINFO_FILENAME); // Extract file name without extension
-                  $colSize = ($index % 3 == 0) ? 'col-sm-3 grid-item-h2' : (($index % 2 == 0) ? 'col-sm-4 grid-item-h1' : 'col-sm-2 grid-item-h1'); // Vary column size
+                
+                  $colSize = ($index % 3 == 0)
+                    ? 'col-sm-3 grid-item-h2'
+                    : (($index % 2 == 0) ? 'col-sm-4 grid-item-h1' : 'col-sm-2 grid-item-h1');
+
+                  $displayedCount++; // Count valid items
                   ?>
                   <div class="grid-item <?= $colSize ?>">
                     <div class="grid-wrap-item">
                       <a class="gallery-title title"><?= ucfirst(str_replace('-', ' ', $title)) ?></a>
-                      <a href="<?= $file ?>" data-lightbox="image" target="_blank" class="view-lightbox swipebox"><i
-                          class="fa fa-search-plus"></i></a>
-                      <a href="menu_functional.php" target="_blank" class="view-more"><i class="fa fa-link"></i></a>
+                      <a href="<?= $file ?>" data-lightbox="image" target="_blank" class="view-lightbox swipebox">
+                        <i class="fa fa-search-plus"></i>
+                      </a>
+                      <a href="menu_functional.php" target="_blank" class="view-more">
+                        <i class="fa fa-link"></i>
+                      </a>
                       <div class="img-wrap">
                         <img src="<?= $file ?>" alt="<?= $title ?>" class="img img-fluid">
                       </div>
                     </div>
                   </div>
                 <?php } ?>
+
               </div>
             </div>
           </section>
